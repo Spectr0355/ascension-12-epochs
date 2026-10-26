@@ -1,0 +1,1115 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "epoch_3"
+	group: ""
+	icon: "ars_nouveau:novice_spell_book"
+	id: "2000000000000002"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000005100"]
+			description: [
+				"§7[Основы заклинаний]§r"
+				""
+				"Базовый фокус мага, позволяющий собирать и сотворять персонализированные заклинания."
+				""
+				"§6Управление и каст:§r"
+				"• §eРедактор чар:§r нажмите §6[C]§r (или §6[ПКМ]§r) с книгой в руках для открытия конструктора заклинаний."
+				"• §eКонструкция:§r каждое заклинание начинается с §bФормы§r (способ доставки) и дополняется §eЭффектами§r (действие магии)."
+				"• §eМана:§r каст расходует фиолетовую полосу маны персонажа, которая со временем восстанавливается сама."
+			]
+			id: "1000000000006100"
+			rewards: [{
+				count: 4
+				id: "1000000000006101"
+				item: "ars_nouveau:source_berry_pie"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006102"
+				item: "ars_nouveau:novice_spell_book"
+				title: "Создать книгу заклинаний"
+				type: "item"
+			}]
+			title: "Книга заклинаний новичка"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000006100"]
+			description: [
+				"§7[Форма заклинания]§r"
+				""
+				"Запускает сгусток концентрированной магии по прямой траектории в точку прицела."
+				""
+				"§6Применение:§r базовая форма для дистанционных атак, удаленного сбора ресурсов и наложения эффектов на расстоянии."
+			]
+			id: "1000000000006200"
+			rewards: [{
+				count: 8
+				id: "1000000000006201"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006202"
+				item: "ars_nouveau:glyph_projectile"
+				title: "Изучить глиф Снаряда"
+				type: "item"
+			}]
+			title: "Глиф: Снаряд (Projectile)"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000006200"]
+			description: [
+				"§7[Боевой эффект]§r"
+				""
+				"Наносит цели прямой магический урон при контакте, частично игнорируя физическую броню противника."
+				""
+				"§aСовет:§r объедините в книге связку §bProjectile§r + §eHarm§r для получения надежного боевого атакующего спелла."
+			]
+			id: "1000000000006300"
+			rewards: [{
+				count: 4
+				id: "1000000000006301"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006302"
+				item: "ars_nouveau:glyph_harm"
+				title: "Изучить глиф Урона"
+				type: "item"
+			}]
+			title: "Глиф: Урон (Harm)"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000006100"]
+			description: [
+				"§7[Форма заклинания]§r"
+				""
+				"Активирует выбранный магический эффект в точке взгляда персонажа на дистанции вытянутой руки."
+				""
+				"§6Особенность:§r требует меньше маны на сотворение, чем дальнобойный снаряд."
+			]
+			id: "1000000000006400"
+			rewards: [{
+				count: 8
+				id: "1000000000006401"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006402"
+				item: "ars_nouveau:glyph_touch"
+				title: "Изучить глиф Касания"
+				type: "item"
+			}]
+			title: "Глиф: Касание (Touch)"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1000000000006400"]
+			description: [
+				"§7[Утилитарный эффект]§r"
+				""
+				"Моментально разрушает блок перед заклинателем или на дистанции полета снаряда без расхода прочности кирки."
+			]
+			id: "1000000000006500"
+			rewards: [{
+				id: "1000000000006501"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006502"
+				item: "ars_nouveau:glyph_break"
+				title: "Изучить глиф Разрушения"
+				type: "item"
+			}]
+			title: "Глиф: Разрушение (Break)"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1000000000006500"]
+			description: [
+				"§7[Магическая мобильность]§r"
+				""
+				"Подбрасывает цель или самого заклинателя высоко вверх."
+				""
+				"§aСовет:§r при касте на себя в связке с §bПарапланом (Paraglider)§r позволяет взлетать на огромную высоту с любой точки рельефа."
+			]
+			id: "1000000000006600"
+			rewards: [{
+				count: 8
+				id: "1000000000006601"
+				item: "minecraft:feather"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006602"
+				item: "ars_nouveau:glyph_launch"
+				title: "Изучить глиф Подброса"
+				type: "item"
+			}]
+			title: "Глиф: Подброс (Launch)"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1000000000006100"]
+			description: [
+				"§7[Рабочее место писца]§r"
+				""
+				"Алтарь для начертания новых глифов форм, эффектов и усилителей заклинаний."
+				""
+				"§6Процесс:§r положите чистый глиф на стол, выберите желаемый символ в интерфейсе и предоставьте необходимые реагенты."
+			]
+			id: "1000000000006700"
+			rewards: [{
+				count: 16
+				id: "1000000000006701"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006702"
+				item: "ars_nouveau:scribes_table"
+				title: "Создать Стол Писца"
+				type: "item"
+			}]
+			title: "Стол начертания (Scribe's Table)"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000006700"]
+			description: [
+				"§7[Основа для формул]§r"
+				""
+				"Глиняная табличка, на которую наносятся магические формулы при изучении новых заклинаний."
+			]
+			id: "1000000000006800"
+			rewards: [{
+				count: 2
+				id: "1000000000006801"
+				item: "ars_nouveau:blank_glyph"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006802"
+				item: "ars_nouveau:blank_glyph"
+				title: "Создать чистый глиф"
+				type: "item"
+			}]
+			title: "Чистый глиф (Blank Glyph)"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000006800"]
+			description: [
+				"§7[Улучшение фокуса II тира]§r"
+				""
+				"Улучшенная книга, увеличивающая запас маны заклинателя и открывающая доступ к глифам 2-го ранга."
+				""
+				"§6Улучшение:§r улучшается на Зачаровывающем Аппарате с использованием сгустков Источника."
+			]
+			id: "1000000000006900"
+			rewards: [{
+				count: 2
+				id: "1000000000006901"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006902"
+				item: "ars_nouveau:apprentice_spell_book"
+				title: "Создать книгу подмастерья"
+				type: "item"
+			}]
+			title: "Книга заклинаний подмастерья"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000006900"]
+			description: [
+				"§7[Высший магический фокус]§r"
+				""
+				"Финальный тир книги Ars Nouveau. Разблокирует сложнейшие глифы 3-го ранга и позволяет накладывать мощные площадные заклинания."
+			]
+			id: "1000000000006A00"
+			rewards: [{
+				id: "1000000000006A01"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006A02"
+				item: "ars_nouveau:archmage_spell_book"
+				title: "Создать книгу архимага"
+				type: "item"
+			}]
+			title: "Книга заклинаний архимага"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000006100"]
+			description: [
+				"§7[Природный конденсатор]§r"
+				""
+				"Дикорастущие ягоды, светящиеся мягким фиолетовым светом. Служат пищей для мага и базовым сырьем для выработки энергии Источника."
+			]
+			id: "1000000000006B00"
+			rewards: [{
+				count: 16
+				id: "1000000000006B01"
+				item: "ars_nouveau:sourceberry_bush"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006B02"
+				item: "ars_nouveau:sourceberry_bush"
+				title: "Собрать ягоды Источника"
+				type: "item"
+			}]
+			title: "Источниковые ягоды"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1000000000006B00"]
+			description: [
+				"§7[Резервуар маны]§r"
+				""
+				"Герметичный сосуд для сбора и хранения до 10,000 единиц чистой энергии Источника (Source)."
+				""
+				"§6Размещение:§r устанавливается рядом с преобразователями для наполнения и рядом с аппаратами для питания крафтов."
+			]
+			id: "1000000000006C00"
+			rewards: [{
+				id: "1000000000006C01"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006C02"
+				item: "ars_nouveau:source_jar"
+				title: "Создать Кувшин Источника"
+				type: "item"
+			}]
+			title: "Кувшин Источника (Source Jar)"
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1000000000006C00"]
+			description: [
+				"§7[Генерация Источника: Флора]§r"
+				""
+				"Преобразует жизненную силу растущих растений в ману Источника."
+				""
+				"§6Установка:§r поставьте преобразователь в центре грядки с источниковыми ягодами вплотную к кувшину."
+			]
+			id: "1000000000006D00"
+			rewards: [{
+				count: 2
+				id: "1000000000006D01"
+				item: "ars_nouveau:source_berry_pie"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006D02"
+				item: "ars_nouveau:agronomic_sourcelink"
+				title: "Создать агрономический преобразователь"
+				type: "item"
+			}]
+			title: "Агрономический преобразователь"
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1000000000006C00"]
+			description: [
+				"§7[Генерация Источника: Органика]§r"
+				""
+				"Поглощает и разлагает любую пищу и органические блоки перед собой, вырабатывая плотный поток Источника в соседний кувшин."
+			]
+			id: "1000000000006E00"
+			rewards: [{
+				count: 8
+				id: "1000000000006E01"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006E02"
+				item: "ars_nouveau:mycelial_sourcelink"
+				title: "Создать мицелиальный преобразователь"
+				type: "item"
+			}]
+			title: "Мицелиальный преобразователь"
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1000000000006D00"]
+			description: [
+				"§7[Генерация Источника: Тепло]§r"
+				""
+				"Поглощает блоки лавы и сжигает твердое углеродное топливо, обеспечивая высокую скорость наполнения кувшинов."
+			]
+			id: "1000000000006F00"
+			rewards: [{
+				id: "1000000000006F01"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000006F02"
+				item: "ars_nouveau:volcanic_sourcelink"
+				title: "Создать вулканический преобразователь"
+				type: "item"
+			}]
+			title: "Вулканический преобразователь"
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1000000000006E00"]
+			description: [
+				"§7[Беспроводная передача маны]§r"
+				""
+				"Транслирует пучки чистой энергии Источника по воздуху между удаленными кувшинами без труб и проводов на дистанцию до 30 блоков."
+			]
+			id: "1000000000007000"
+			rewards: [{
+				count: 2
+				id: "1000000000007001"
+				item: "ars_nouveau:relay"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007002"
+				item: "ars_nouveau:relay"
+				title: "Создать магическое реле"
+				type: "item"
+			}]
+			title: "Магическое реле (Source Relay)"
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1000000000007000"]
+			description: [
+				"§7[Маршрутизация маны]§r"
+				""
+				"Инструмент настройки магических связей."
+				""
+				"§6Применение:§r нажмите §6ПКМ§r по кувшину-источнику, затем §6ПКМ§r по реле или принимающему кувшину для прокладки светового луча энергии."
+			]
+			id: "1000000000007100"
+			rewards: [{
+				count: 4
+				id: "1000000000007101"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007102"
+				item: "ars_nouveau:dominion_wand"
+				title: "Создать Жезл Доминирования"
+				type: "item"
+			}]
+			title: "Жезл Доминирования"
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1000000000006100"]
+			description: [
+				"§7[Кристаллизация магии]§r"
+				""
+				"Устройство для насыщения минералов энергией Источника из находящегося рядом кувшина."
+				""
+				"§6Работа:§r поместите внутрь аметист или лазурит — прибор начнет впитывать ману и синтезирует Сгусток Источника."
+			]
+			id: "1000000000007200"
+			rewards: [{
+				count: 8
+				id: "1000000000007201"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007202"
+				item: "ars_nouveau:imbuement_chamber"
+				title: "Построить Камеру Наполнения"
+				type: "item"
+			}]
+			title: "Камера Наполнения (Imbuement Chamber)"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1000000000007200"]
+			description: [
+				"§7[Магический проводник]§r"
+				""
+				"Кристаллизованная чистая энергия. Служит фундаментальным материалом для крафта магических станков и ритуальных предметов."
+			]
+			id: "1000000000007300"
+			rewards: [{
+				count: 4
+				id: "1000000000007301"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007302"
+				item: "ars_nouveau:source_gem"
+				title: "Синтезировать Source Gem"
+				type: "item"
+			}]
+			title: "Сгусток Источника (Source Gem)"
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1000000000007300"]
+			description: [
+				"§7[Основание алтаря]§r"
+				""
+				"Пьедестал-основа, служащий фундаментом для установки Зачаровывающего Аппарата."
+			]
+			id: "1000000000007400"
+			rewards: [{
+				count: 4
+				id: "1000000000007401"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007402"
+				item: "ars_nouveau:arcane_core"
+				title: "Создать Магическое Ядро"
+				type: "item"
+			}]
+			title: "Магическое ядро (Arcane Core)"
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1000000000007400"]
+			description: [
+				"§7[Мультиблочный алтарь крафта]§r"
+				""
+				"Главный производственный станок высшей магии Ars Nouveau."
+				""
+				"§6Конструкция:§r"
+				"• Установите §eArcane Core§r на землю, а сверху на него водрузите §bEnchanting Apparatus§r."
+				"• Вокруг на расстоянии 2-3 блоков расставьте §eArcane Pedestals§r."
+				"• Центральный предмет кладется в аппарат, дополнительные ингредиенты — на пьедесталы."
+			]
+			id: "1000000000007500"
+			rewards: [{
+				id: "1000000000007501"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007502"
+				item: "ars_nouveau:enchanting_apparatus"
+				title: "Создать Зачаровывающий Аппарат"
+				type: "item"
+			}]
+			title: "Зачаровывающий Аппарат"
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1000000000007400"]
+			description: [
+				"§7[Подача реагентов]§r"
+				""
+				"Удерживает вспомогательные компоненты для ритуалов синтеза в Зачаровывающем Аппарате."
+			]
+			id: "1000000000007600"
+			rewards: [{
+				count: 3
+				id: "1000000000007601"
+				item: "ars_nouveau:arcane_pedestal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007602"
+				item: "ars_nouveau:arcane_pedestal"
+				title: "Создать Магический Пьедестал"
+				type: "item"
+			}]
+			title: "Магический пьедестал"
+			x: 6.0d
+			y: 4.8d
+		}
+		{
+			dependencies: ["1000000000007500"]
+			description: [
+				"§7[Концентрированный блок]§r"
+				""
+				"Плотный блок из девяти сгустков Источника. Применяется в продвинутых конструкциях и стабилизирует ритуалы."
+			]
+			id: "1000000000007700"
+			rewards: [{
+				id: "1000000000007701"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007702"
+				item: "ars_nouveau:source_gem_block"
+				title: "Скрафтить блок Источника"
+				type: "item"
+			}]
+			title: "Блок Сгустков Источника"
+			x: 8.0d
+			y: 4.8d
+		}
+		{
+			dependencies: ["1000000000006100"]
+			description: [
+				"§7[Магическая агрономия]§r"
+				""
+				"Культура, впитывающая ману из почвы. Выращивается на вспаханной земле для получения магических лепестков."
+			]
+			id: "1000000000007800"
+			rewards: [{
+				count: 4
+				id: "1000000000007801"
+				item: "ars_nouveau:magebloom"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007802"
+				item: "ars_nouveau:magebloom_crop"
+				title: "Вырастить Магоцвет"
+				type: "item"
+			}]
+			title: "Семена Магоцвета (Magebloom)"
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1000000000007800"]
+			description: [
+				"§7[Магические нити]§r"
+				""
+				"Текстильное волокно высокой прочности, служащее основой для ткачества одеяний мага всех тиров."
+			]
+			id: "1000000000007900"
+			rewards: [{
+				count: 8
+				id: "1000000000007901"
+				item: "ars_nouveau:magebloom_fiber"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007902"
+				item: "ars_nouveau:magebloom_fiber"
+				title: "Получить волокно Магоцвета"
+				type: "item"
+			}]
+			title: "Волокно Магоцвета"
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1000000000007900"]
+			description: [
+				"§7[Экипировка I тира]§r"
+				""
+				"Базовое облачение волшебника. Увеличивает скорость естественной регенерации маны персонажа."
+			]
+			id: "1000000000007A00"
+			rewards: [{
+				count: 4
+				id: "1000000000007A01"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007A02"
+				item: {
+					Count: 1
+					id: "ars_nouveau:arcanist_robes"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Сшить мантию Арканиста"
+				type: "item"
+			}]
+			title: "Мантия Арканиста"
+			x: 6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1000000000007A00"]
+			description: [
+				"§7[Экипировка II тира]§r"
+				""
+				"Продвинутая мантия, создаваемая на Зачаровывающем Аппарате. Значительно повышает максимальный запас маны."
+			]
+			id: "1000000000007B00"
+			rewards: [{
+				count: 2
+				id: "1000000000007B01"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007B02"
+				item: {
+					Count: 1
+					id: "ars_nouveau:sorcerer_robes"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать мантию Чародея"
+				type: "item"
+			}]
+			title: "Мантия Чародея"
+			x: 8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1000000000007B00"]
+			description: [
+				"§7[Тяжелый магический доспех]§r"
+				""
+				"Бронированное одеяние высшего тира, сочетающее свойства прочной брони и максимальные магические бонусы."
+			]
+			id: "1000000000007C00"
+			rewards: [{
+				id: "1000000000007C01"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007C02"
+				item: {
+					Count: 1
+					id: "ars_nouveau:battlemage_robes"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать мантию Боевого Мага"
+				type: "item"
+			}]
+			title: "Мантия Боевого Мага"
+			x: 10.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1000000000007900"]
+			description: [
+				"§7[Нательная реликвия Curios]§r"
+				""
+				"Экипируется в слот кольца: снижает расход маны при сотворении любых заклинаний на 10%."
+			]
+			id: "1000000000007D00"
+			rewards: [{
+				count: 4
+				id: "1000000000007D01"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007D02"
+				item: "ars_nouveau:ring_of_lesser_discount"
+				title: "Создать кольцо скидки"
+				type: "item"
+			}]
+			title: "Кольцо скидки маны"
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1000000000007D00"]
+			description: [
+				"§7[Нательная реликвия Curios]§r"
+				""
+				"Экипируется в слот пояса: дарует способность плавного управляемого парения над землей."
+			]
+			id: "1000000000007E00"
+			rewards: [{
+				count: 8
+				id: "1000000000007E01"
+				item: "minecraft:feather"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007E02"
+				item: "ars_nouveau:belt_of_levitation"
+				title: "Создать Пояс Левитации"
+				type: "item"
+			}]
+			title: "Пояс Левитации"
+			x: 8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1000000000006100"]
+			description: [
+				"§7[Алтарь полевых ритуалов]§r"
+				""
+				"Каменная чаша для проведения ритуалов изменения погоды, полета и одушевления духов природы."
+				""
+				"§6Активация:§r положите ритуальную таблетку в жаровню (§6ПКМ§r) и нажмите пустой рукой для начала ритуала."
+			]
+			id: "1000000000007F00"
+			rewards: [{
+				count: 16
+				id: "1000000000007F01"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000007F02"
+				item: "ars_nouveau:ritual_brazier"
+				title: "Создать Ритуальную Жаровню"
+				type: "item"
+			}]
+			title: "Ритуальная Жаровня (Ritual Brazier)"
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1000000000007F00"]
+			description: [
+				"§7[Призыв духов природы]§r"
+				""
+				"Таблетка ритуала, оживляющая магических существ-помощников (фамильяров) и создающая их амулеты."
+			]
+			id: "1000000000008000"
+			rewards: [{
+				count: 2
+				id: "1000000000008001"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000008002"
+				item: "ars_nouveau:ritual_awakening"
+				title: "Создать Ritual of Awakening"
+				type: "item"
+			}]
+			title: "Ритуал Пробуждения"
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1000000000008000"]
+			description: [
+				"§7[Логистический фамильяр]§r"
+				""
+				"Золотистый зверек-дух. Автоматически подбирает предметы с пола или из сундуков и переносит их в указанные хранилища с высокой скоростью."
+			]
+			id: "1000000000008100"
+			rewards: [{
+				count: 32
+				id: "1000000000008101"
+				item: "minecraft:gold_nugget"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000008102"
+				item: "ars_nouveau:starbuncle_charm"
+				title: "Создать амулет Старбанкли"
+				type: "item"
+			}]
+			title: "Амулет Старбанкли (Starbuncle)"
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1000000000008000"]
+			description: [
+				"§7[Аграрный фамильяр]§r"
+				""
+				"Лесной дух цветов и растений. Автоматически собирает урожай в радиусе без повреждения семян и пересадки."
+			]
+			id: "1000000000008200"
+			rewards: [{
+				count: 16
+				id: "1000000000008201"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000008202"
+				item: "ars_nouveau:whirlisprig_charm"
+				title: "Создать амулет Вирлисприга"
+				type: "item"
+			}]
+			title: "Амулет Вирлисприга (Whirlisprig)"
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1000000000008100"]
+			description: [
+				"§7[Ферма без убийства]§r"
+				""
+				"Маленький гоблин-дух. Генерирует дроп и опыт со всех мобов, находящихся рядом, не нанося им физического урона."
+			]
+			id: "1000000000008300"
+			rewards: [{
+				count: 8
+				id: "1000000000008301"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000008302"
+				item: "ars_nouveau:drygmy_charm"
+				title: "Создать амулет Дригми"
+				type: "item"
+			}]
+			title: "Амулет Дригми (Drygmy)"
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1000000000008200"]
+			description: [
+				"§7[Автокрафтер]§r"
+				""
+				"Дух ведьминого котла. При привязке к рецепту автоматически берет ресурсы из соседних сундуков и непрерывно создает предметы."
+			]
+			id: "1000000000008400"
+			rewards: [{
+				id: "1000000000008401"
+				item: "minecraft:cauldron"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000008402"
+				item: "ars_nouveau:wixie_charm"
+				title: "Создать амулет Викси"
+				type: "item"
+			}]
+			title: "Амулет Викси (Wixie)"
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1000000000006A00"
+				"1000000000007500"
+			]
+			description: [
+				"§7[Трофеи дикой фауны]§r"
+				""
+				"В снежных и лесных биомах обитают опасные существа дикой магии (Wilden Hunter, Stalker, Defender)."
+				""
+				"§6Необходимые трофеи:§r"
+				"• Рог дикого зверя (§eWilden Horn§r)."
+				"• Крыло дикого охотника (§eWilden Wing§r)."
+				"• Шип защитника (§eWilden Spike§r)."
+			]
+			id: "1000000000008500"
+			rewards: [{
+				count: 2
+				id: "1000000000008501"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000008502"
+				item: "ars_nouveau:wilden_horn"
+				title: "Добыть трофеи Диких Созданий"
+				type: "item"
+			}]
+			title: "Охота на Диких Созданий"
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1000000000008500"
+				"1000000000007F00"
+			]
+			description: [
+				"§7[Ритуал битвы с боссом]§r"
+				""
+				"Таблетка призыва главного босса мода Ars Nouveau — трехфазной Химеры (§bWilden Chimera§r)."
+				""
+				"§6Проведение ритуала:§r"
+				"Положите таблетку в жаровню, бросьте на нее Рог, Крыло и Шип, затем активируйте ритуал пустой рукой."
+			]
+			id: "1000000000008600"
+			rewards: [{
+				count: 2
+				id: "1000000000008601"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000008602"
+				item: "ars_nouveau:ritual_wilden_summon"
+				title: "Создать Ritual of Wilden Summon"
+				type: "item"
+			}]
+			title: "Призыв Химеры Диких Земель"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000008600"]
+			description: [
+				"§7[Трофей триумфатора]§r"
+				""
+				"Редчайшая реликвия, подтверждающая победу над яростной Химерой Диких Земель."
+				""
+				"Служит катализатором для перехода от управляемых заклинаний к природной магии растений."
+			]
+			id: "1000000000008700"
+			rewards: [{
+				id: "1000000000008701"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000008702"
+				item: "ars_nouveau:wilden_tribute"
+				title: "Одержать победу над Химерой"
+				type: "item"
+			}]
+			title: "Дань Диких Земель (Wilden Tribute)"
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1000000000008700"
+				"1000000000007300"
+			]
+			description: [
+				"§7[Испытание перехода]§r"
+				""
+				"Вы подчинили силу Источника, изучили глифы трех рангов, освоили ритуалы и одолели Химеру Диких Земель."
+				""
+				"§6Финальное требование:§r"
+				"Подтвердите наличие Сгустка Источника (§eSource Gem§r), чтобы завершить Эпоху 3 и получить стартовый комплект Ботаники для перехода в §bЭпоху 4: Сила Земли и Мана (Botania)§r."
+			]
+			id: "1000000000008800"
+			rewards: [{
+				id: "1000000000008801"
+				item: "botania:flower_bag"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1000000000008802"
+				item: "ars_nouveau:source_gem"
+				title: "Синтезировать Source Gem"
+				type: "item"
+			}]
+			title: "ВРАТА ЭПОХИ 3: Катализатор Природы"
+			x: 13.5d
+			y: 0.0d
+		}
+	]
+	title: "Эпоха 3: Искры Магии (Ars Nouveau)"
+}

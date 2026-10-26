@@ -1,0 +1,24 @@
+# Minecraft runtime & volatile files
+minecraft/logs/
+minecraft/crash-reports/
+minecraft/saves/
+minecraft/screenshots/
+minecraft/usercache.json
+minecraft/usernamecache.json
+minecraft/local/
+minecraft/patchouli_data.json
+minecraft/rhino.local.properties
+minecraft/server-resource-packs/
+
+# Temporary / scratch / build caches
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Heavy mod jars (modpack distributes configs, quests, scripts, and mod manifest)
+# Binary jars can be downloaded via packwiz / curseforge / modrinth
+minecraft/mods/*.jar
+!minecraft/mods/.gitkeep

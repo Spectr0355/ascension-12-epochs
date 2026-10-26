@@ -1,0 +1,1079 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "epoch_5"
+	group: ""
+	icon: "bloodmagic:altar"
+	id: "2000000000000004"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["100000000000B800"]
+			description: [
+				"§7[Фундамент магии крови]§r"
+				""
+				"Алтарь аккумулирует Жизненную Сущность (§eLife Essence / LP§r), добываемую жертвой собственной крови или крови мобов."
+				""
+				"§6Емкость и применение:§r"
+				"• На 1-м уровне вмещает до 10,000 LP."
+				"• Служит для зарядки кровавых шаров и закалки сланцев под действием крови."
+			]
+			id: "100000000000C100"
+			rewards: [{
+				count: 2
+				id: "100000000000C101"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000C102"
+				item: "bloodmagic:altar"
+				title: "Построить Кровавый Алтарь"
+				type: "item"
+			}]
+			title: "Кровавый Алтарь (Blood Altar)"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000000C100"]
+			description: [
+				"§7[Самопожертвование]§r"
+				""
+				"Основной инструмент добычи крови на раннем этапе."
+				""
+				"§6Применение:§r подойдите вплотную к алтарю и нажмите §6ПКМ§r с кинжалом в руке. Вы потеряете 1 сердце здоровья, а алтарь пополнится на 200 LP."
+				""
+				"§aСовет:§r используйте сытную еду Farmer's Delight для быстрого восстановления здоровья эффектом Сытости."
+			]
+			id: "100000000000C200"
+			rewards: [{
+				count: 8
+				id: "100000000000C201"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000C202"
+				item: "bloodmagic:sacrificialdagger"
+				title: "Создать Жертвенный Кинжал"
+				type: "item"
+			}]
+			title: "Жертвенный Кинжал"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["100000000000C200"]
+			description: [
+				"§7[Усилитель боли]§r"
+				""
+				"Мультиблочная чаша, устанавливаемая рядом с кровавым алтарем."
+				""
+				"§6Эффект:§r впитывает дым благовоний и увеличивает приток LP от каждого укола жертвенным кинжалом вплоть до +400%!"
+			]
+			id: "100000000000C300"
+			rewards: [{
+				count: 16
+				id: "100000000000C301"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000C302"
+				item: "bloodmagic:incensealtar"
+				title: "Создать Алтарь Благовоний"
+				type: "item"
+			}]
+			title: "Алтарь Благовоний (Incense Altar)"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["100000000000C100"]
+			description: [
+				"§7[Жертвоприношение сущностей]§r"
+				""
+				"Оружие для мгновенного принесения в жертву врагов и животных рядом с алтарем."
+				""
+				"§6Применение:§r удар (§6ЛКМ§r) мгновенно убивает моба рядом с алтарем. Враждебные мобы дают 500 LP, а деревенские жители — до 2,000 LP за раз!"
+			]
+			id: "100000000000C400"
+			rewards: [{
+				id: "100000000000C401"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000C402"
+				item: "bloodmagic:daggerofsacrifice"
+				title: "Создать Кинжал Жертвоприношений"
+				type: "item"
+			}]
+			title: "Кинжал Жертвоприношений"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["100000000000C100"]
+			description: [
+				"§7[Инспекция алтаря]§r"
+				""
+				"Позволяет считывать скрытые параметры магии крови."
+				""
+				"§6Управление:§r кликните §6ПКМ§r по алтарю крови — в чате отобразится точный объем накопленного LP и текущий тир алтаря."
+			]
+			id: "100000000000C500"
+			rewards: [{
+				count: 8
+				id: "100000000000C501"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000C502"
+				item: "bloodmagic:divinationsigil"
+				title: "Создать Сигил Предсказания"
+				type: "item"
+			}]
+			title: "Сигил Предсказания (Divination Sigil)"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["100000000000C500"]
+			description: [
+				"§7[Продвинутый мониторинг]§r"
+				""
+				"Улучшенная версия сигила предсказания. При наведении на алтарь наглядно отображает прогресс идущей трансмутации предметов и скорость потребления крови."
+			]
+			id: "100000000000C600"
+			rewards: [{
+				count: 4
+				id: "100000000000C601"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000C602"
+				item: "bloodmagic:seersigil"
+				title: "Создать Сигил Провидца"
+				type: "item"
+			}]
+			title: "Сигил Провидца (Seer's Sigil)"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["100000000000C100"]
+			description: [
+				"§7[Материал I тира]§r"
+				""
+				"Положите блок гладкого камня в алтарь с 1,000 LP. Камень впитает кровь и превратится в базовый строительный сланец."
+			]
+			id: "100000000000C700"
+			rewards: [{
+				count: 4
+				id: "100000000000C701"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000C702"
+				item: "bloodmagic:blankslate"
+				title: "Создать Чистый Сланец"
+				type: "item"
+			}]
+			title: "Чистый Сланец (Blank Slate)"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["100000000000C700"]
+			description: [
+				"§7[Улучшение алтаря]§r"
+				""
+				"Постройте квадрат 3х3 из 8 рун на один блок ниже самого алтаря (алтарь находится по центру над пустой центральной клеткой)."
+				""
+				"Открывает доступ к крафту Укрепленного сланца и Шара Подмастерья."
+			]
+			id: "100000000000C800"
+			rewards: [{
+				count: 2
+				id: "100000000000C801"
+				item: "bloodmagic:speedrune"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000C802"
+				item: "bloodmagic:blankrune"
+				title: "Скрафтить 8 рун для алтаря"
+				type: "item"
+			}]
+			title: "Алтарь Tier 2: Кольцо Рун"
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["100000000000C800"]
+			description: [
+				"§7[Материал II тира]§r"
+				""
+				"Поместите Чистый Сланец в алтарь 2-го уровня, затратив 2,000 LP крови."
+				""
+				"Служит материалом для рун скорости, емкости и сигилов движения."
+			]
+			id: "100000000000C900"
+			rewards: [{
+				count: 2
+				id: "100000000000C901"
+				item: "bloodmagic:reinforcedslate"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000C902"
+				item: "bloodmagic:reinforcedslate"
+				title: "Создать Укрепленный Сланец"
+				type: "item"
+			}]
+			title: "Укрепленный Сланец"
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["100000000000C900"]
+			description: [
+				"§7[Улучшение алтаря]§r"
+				""
+				"Добавьте второе внешнее кольцо из 20 рун на 2 блока ниже алтаря и возведите по 4 углам столбы высотой в 2 блока из светокамня со светокаменными блоками наверху."
+				""
+				"Открывает доступ к Насыщенному сланцу и Шару Чародея."
+			]
+			id: "100000000000CA00"
+			rewards: [{
+				count: 2
+				id: "100000000000CA01"
+				item: "bloodmagic:altarcapacityrune"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000CA02"
+				item: "minecraft:glowstone"
+				title: "Установить светокамень для алтаря"
+				type: "item"
+			}]
+			title: "Алтарь Tier 3: Светокаменные Колонны"
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["100000000000CA00"]
+			description: [
+				"§7[Материал III тира]§r"
+				""
+				"Поместите Укрепленный Сланец в алтарь 3-го тира, затратив 5,000 LP."
+				""
+				"Необходим для ритуальных камней и Шара Мастера."
+			]
+			id: "100000000000CB00"
+			rewards: [{
+				count: 2
+				id: "100000000000CB01"
+				item: "bloodmagic:infusedslate"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000CB02"
+				item: "bloodmagic:infusedslate"
+				title: "Создать Насыщенный Сланец"
+				type: "item"
+			}]
+			title: "Насыщенный Сланец (Infused Slate)"
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["100000000000CB00"]
+			description: [
+				"§7[Высший алтарь]§r"
+				""
+				"Постройте третье внешнее кольцо из 28 рун на 3 блока ниже алтаря и 4 столба высотой в 4 блока с Кровавым Камнем (Bloodstone Brick) на вершинах."
+				""
+				"Позволяет закалять Демонические сланцы."
+			]
+			id: "100000000000CC00"
+			rewards: [{
+				id: "100000000000CC01"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000CC02"
+				item: "bloodmagic:demonslate"
+				title: "Подготовить алтарь Tier 4"
+				type: "item"
+			}]
+			title: "Алтарь Tier 4: Кровавые Колонны"
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["100000000000C100"]
+			description: [
+				"§7[Шар души I тира]§r"
+				""
+				"Создается погружением алмаза в алтарь с 2,000 LP."
+				""
+				"§6Привязка:§r нажмите §6ПКМ§r с шаром в руках для привязки к вашей душе. Положите шар обратно в алтарь — излишки крови будут автоматически перетекать в вашу личную Сеть Души (емкость: 5,000 LP)."
+			]
+			id: "100000000000CD00"
+			rewards: [{
+				count: 2
+				id: "100000000000CD01"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000CD02"
+				item: "bloodmagic:weakbloodorb"
+				title: "Создать Слабый Шар Крови"
+				type: "item"
+			}]
+			title: "Слабый Кровавый Шар"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"100000000000CD00"
+				"100000000000C800"
+			]
+			description: [
+				"§7[Шар души II тира]§r"
+				""
+				"Создается из изумруда в алтаре 2-го уровня с 5,000 LP. Расширяет персональную сеть души до 25,000 LP."
+			]
+			id: "100000000000CE00"
+			rewards: [{
+				count: 4
+				id: "100000000000CE01"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000CE02"
+				item: "bloodmagic:apprenticebloodorb"
+				title: "Создать Шар Подмастерья"
+				type: "item"
+			}]
+			title: "Шар Подмастерья"
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"100000000000CE00"
+				"100000000000CA00"
+			]
+			description: [
+				"§7[Шар души III тира]§r"
+				""
+				"Создается из золотого блока в алтаре 3-го уровня с 25,000 LP. Расширяет емкость сети души до 150,000 LP."
+			]
+			id: "100000000000CF00"
+			rewards: [{
+				id: "100000000000CF01"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000CF02"
+				item: "bloodmagic:magicianbloodorb"
+				title: "Создать Шар Чародея"
+				type: "item"
+			}]
+			title: "Шар Чародея"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"100000000000CF00"
+				"100000000000CC00"
+			]
+			description: [
+				"§7[Шар души IV тира]§r"
+				""
+				"Создается из алмазного блока в алтаре 4-го тира с 40,000 LP. Расширяет персональную сеть до 1,000,000 LP для непрерывного питания ритуалов."
+			]
+			id: "100000000000D000"
+			rewards: [{
+				id: "100000000000D001"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000D002"
+				item: "bloodmagic:masterbloodorb"
+				title: "Создать Шар Мастера"
+				type: "item"
+			}]
+			title: "Шар Мастера"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["100000000000D000"]
+			description: [
+				"§7[Шар души V тира]§r"
+				""
+				"Высший кровавый сосуд, расширяющий хранилище сети души до 10,000,000 LP."
+			]
+			id: "100000000000D100"
+			rewards: [{
+				id: "100000000000D101"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000D102"
+				item: "bloodmagic:archmagebloodorb"
+				title: "Создать Шар Архимага"
+				type: "item"
+			}]
+			title: "Шар Архимага"
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["100000000000C700"]
+			description: [
+				"§7[Базовый блок структуры]§r"
+				""
+				"Нейтральная руна, необходимая для геометрического построения ярусов Кровавого Алтаря."
+			]
+			id: "100000000000D200"
+			rewards: [{
+				count: 4
+				id: "100000000000D201"
+				item: "bloodmagic:blankrune"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000D202"
+				item: "bloodmagic:blankrune"
+				title: "Скрафтить Чистую Руну"
+				type: "item"
+			}]
+			title: "Чистая Руна (Blank Rune)"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["100000000000D200"]
+			description: [
+				"§7[Ускорение закалки]§r"
+				""
+				"Увеличивает скорость перемещения крови в предмет внутри алтаря на 20% за каждую установленную руну."
+			]
+			id: "100000000000D300"
+			rewards: [{
+				count: 2
+				id: "100000000000D301"
+				item: "bloodmagic:speedrune"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000D302"
+				item: "bloodmagic:speedrune"
+				title: "Создать Руну Скорости"
+				type: "item"
+			}]
+			title: "Руна Скорости (Speed Rune)"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["100000000000D200"]
+			description: [
+				"§7[Расширение бака алтаря]§r"
+				""
+				"Добавляет +2,000 LP к максимальной вместимости внутреннего бака Кровавого Алтаря."
+			]
+			id: "100000000000D400"
+			rewards: [{
+				count: 2
+				id: "100000000000D401"
+				item: "bloodmagic:altarcapacityrune"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000D402"
+				item: "bloodmagic:altarcapacityrune"
+				title: "Создать Руну Емкости"
+				type: "item"
+			}]
+			title: "Руна Емкости (Rune of Capacity)"
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["100000000000D300"]
+			description: [
+				"§7[Скорость подачи жидкостей]§r"
+				""
+				"Увеличивает скорость закачки и откачки крови трубами и помпами в процентном соотношении."
+			]
+			id: "100000000000D500"
+			rewards: [{
+				count: 2
+				id: "100000000000D501"
+				item: "bloodmagic:dislocationrune"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000D502"
+				item: "bloodmagic:dislocationrune"
+				title: "Создать Руну Смещения"
+				type: "item"
+			}]
+			title: "Руна Смещения (Rune of Dislocation)"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["100000000000D400"]
+			description: [
+				"§7[Больше крови с мобов]§r"
+				""
+				"Увеличивает выход LP при убийстве сущностей Кинжалом Жертвоприношений на 10% за каждую руну."
+			]
+			id: "100000000000D600"
+			rewards: [{
+				count: 2
+				id: "100000000000D601"
+				item: "bloodmagic:sacrificerune"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000D602"
+				item: "bloodmagic:sacrificerune"
+				title: "Создать Руну Жертвоприношения"
+				type: "item"
+			}]
+			title: "Руна Жертвоприношения"
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"100000000000D500"
+				"100000000000D600"
+			]
+			description: [
+				"§7[Больше крови из себя]§r"
+				""
+				"Увеличивает объем LP, получаемый при нанесении ран собственному телу Жертвенным Кинжалом."
+			]
+			id: "100000000000D700"
+			rewards: [{
+				count: 2
+				id: "100000000000D701"
+				item: "bloodmagic:selfsacrificerune"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000D702"
+				item: "bloodmagic:selfsacrificerune"
+				title: "Создать Руну Самопожертвования"
+				type: "item"
+			}]
+			title: "Руна Самопожертвования"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["100000000000CD00"]
+			description: [
+				"§7[Вечный источник света]§r"
+				""
+				"Выстреливает светящейся сферой крови на любую поверхность на дистанции за мизерную плату LP из сети души."
+			]
+			id: "100000000000D800"
+			rewards: [{
+				count: 8
+				id: "100000000000D801"
+				item: "minecraft:glowstone"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000D802"
+				item: "bloodmagic:bloodlightsigil"
+				title: "Создать Сигил Света"
+				type: "item"
+			}]
+			title: "Сигил Кровавого Света"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["100000000000D800"]
+			description: [
+				"§7[Бесконечный источник воды]§r"
+				""
+				"Размещает блок воды кликом ПКМ или наполняет котлы и лепестковые аптекари без расхода ведер."
+			]
+			id: "100000000000D900"
+			rewards: [{
+				id: "100000000000D901"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000D902"
+				item: "bloodmagic:watersigil"
+				title: "Создать Сигил Воды"
+				type: "item"
+			}]
+			title: "Сигил Воды (Water Sigil)"
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["100000000000D800"]
+			description: [
+				"§7[Бесконечная лава]§r"
+				""
+				"Размещает блок лавы в точке взгляда за 1,000 LP из сети души. Незаменим для питания теплолилий Botania и печей."
+			]
+			id: "100000000000DA00"
+			rewards: [{
+				id: "100000000000DA01"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000DA02"
+				item: "bloodmagic:lavasigil"
+				title: "Создать Сигил Лавы"
+				type: "item"
+			}]
+			title: "Сигил Лавы (Lava Sigil)"
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["100000000000D900"]
+			description: [
+				"§7[Воздушный рывок]§r"
+				""
+				"Выталкивает заклинателя в направлении взгляда с огромным импульсом скорости, позволяя летать на параплане без костров."
+			]
+			id: "100000000000DB00"
+			rewards: [{
+				count: 8
+				id: "100000000000DB01"
+				item: "minecraft:feather"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000DB02"
+				item: "bloodmagic:airsigil"
+				title: "Создать Сигил Воздуха"
+				type: "item"
+			}]
+			title: "Сигил Воздуха (Air Sigil)"
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["100000000000DA00"]
+			description: [
+				"§7[Органайзер сигилов]§r"
+				""
+				"Позволяет упаковать до 5 различных сигилов в один предмет. Переключение активного сигила осуществляется сочетанием §6[Shift + Колесико мыши]§r."
+			]
+			id: "100000000000DC00"
+			rewards: [{
+				count: 4
+				id: "100000000000DC01"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000DC02"
+				item: "bloodmagic:sigilofholding"
+				title: "Создать Сигил Удержания"
+				type: "item"
+			}]
+			title: "Сигил Удержания (Sigil of Holding)"
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["100000000000C700"]
+			description: [
+				"§7[Захват сущности воли]§r"
+				""
+				"Бросьте ловушку во враждебного моба (над ним появится белое свечение) и добейте его — из него гарантированно выпадет Демоническая Воля."
+			]
+			id: "100000000000DD00"
+			rewards: [{
+				count: 8
+				id: "100000000000DD01"
+				item: "bloodmagic:soulsnare"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000DD02"
+				item: "bloodmagic:soulsnare"
+				title: "Создать Ловушку Душ"
+				type: "item"
+			}]
+			title: "Ловушка Душ (Soul Snare)"
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["100000000000DD00"]
+			description: [
+				"§7[Психическая энергия]§r"
+				""
+				"Кристаллизованная сила поверженных монстров. Служит топливом для Горна Адского Пламени."
+			]
+			id: "100000000000DE00"
+			rewards: [{
+				count: 4
+				id: "100000000000DE01"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000DE02"
+				item: "bloodmagic:basemonstersoul"
+				title: "Добыть Демоническую Волю"
+				type: "item"
+			}]
+			title: "Демоническая Воля (Demon Will)"
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["100000000000DE00"]
+			description: [
+				"§7[Кузница воли]§r"
+				""
+				"Станок для выращивания кристаллов и зачарования живой брони под действием энергии Демонической Воли."
+			]
+			id: "100000000000DF00"
+			rewards: [{
+				count: 4
+				id: "100000000000DF01"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000DF02"
+				item: "bloodmagic:soulforge"
+				title: "Построить Горн Адского Пламени"
+				type: "item"
+			}]
+			title: "Горн Адского Пламени (Hellfire Forge)"
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["100000000000DF00"]
+			description: [
+				"§7[Хранилища воли]§r"
+				""
+				"Магические кристаллы (§ePetty ➔ Lesser ➔ Common ➔ Greater§r), накапливающие Демоническую Волю при убийстве монстров прямо в инвентаре."
+			]
+			id: "100000000000E000"
+			rewards: [{
+				count: 2
+				id: "100000000000E001"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000E002"
+				item: "bloodmagic:soulgempetty"
+				title: "Создать Petty Tartaric Gem"
+				type: "item"
+			}]
+			title: "Тартаровы Самоцветы (Tartaric Gems)"
+			x: 8.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["100000000000E000"]
+			description: [
+				"§7[Адаптивный экзоскелет]§r"
+				""
+				"Органический доспех, обучающийся действиям владельца:"
+				"• Бег и прыжки развивают скорость перемещения."
+				"• Получение урона формирует пассивное сопротивление стихиям."
+				"• Удары оружием добавляют вампиризм и критический урон."
+			]
+			id: "100000000000E100"
+			rewards: [{
+				id: "100000000000E101"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000E102"
+				item: {
+					Count: 1
+					id: "bloodmagic:livingplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Живую Кирасу"
+				type: "item"
+			}]
+			title: "Живая Броня (Living Armor)"
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["100000000000CB00"]
+			description: [
+				"§7[Компоненты ритуалов]§r"
+				""
+				"Магические блоки, из которых выкладываются круги древних ритуалов крови."
+			]
+			id: "100000000000E200"
+			rewards: [{
+				count: 8
+				id: "100000000000E201"
+				item: "bloodmagic:ritualstone"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000E202"
+				item: "bloodmagic:ritualstone"
+				title: "Создать Ритуальные Камни"
+				type: "item"
+			}]
+			title: "Ритуальные Камни (Ritual Stones)"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["100000000000E200"]
+			description: [
+				"§7[Сердце ритуала]§r"
+				""
+				"Центральный блок, считывающий геометрию ритуального круга и принимающий энергию кристалла активации."
+			]
+			id: "100000000000E300"
+			rewards: [{
+				count: 8
+				id: "100000000000E301"
+				item: "bloodmagic:ritualstone"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000E302"
+				item: "bloodmagic:masterritualstone"
+				title: "Создать Мастер-Камень"
+				type: "item"
+			}]
+			title: "Мастер-Камень Ритуала"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["100000000000E300"]
+			description: [
+				"§7[Автостроитель ритуалов]§r"
+				""
+				"Инструмент для автоматической расстановки ритуальных камней."
+				""
+				"§6Управление:§r выберите нужный ритуал в меню жезла (§6Shift + Колесико§r), затем кликайте §6ПКМ§r по Мастер-Камню — жезл сам расставит все камни из вашего инвентаря."
+			]
+			id: "100000000000E400"
+			rewards: [{
+				count: 8
+				id: "100000000000E401"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000E402"
+				item: "bloodmagic:ritualdiviner"
+				title: "Создать Ритуальный Прорицатель"
+				type: "item"
+			}]
+			title: "Ритуальный Прорицатель"
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["100000000000E300"]
+			description: [
+				"§7[Запуск древних ритуалов]§r"
+				""
+				"Кликните ПКМ с кристаллом по Мастер-Камню готовой структуры. Ритуал начнет непрерывно работать за счет LP из вашей сети души."
+			]
+			id: "100000000000E500"
+			rewards: [{
+				count: 2
+				id: "100000000000E501"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000E502"
+				item: "bloodmagic:activationcrystalweak"
+				title: "Создать Кристалл Активации"
+				type: "item"
+			}]
+			title: "Кристалл Активации"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"100000000000CC00"
+				"100000000000CB00"
+			]
+			description: [
+				"§7[Материал IV тира]§r"
+				""
+				"Поместите Насыщенный Сланец в алтарь 4-го тира, влив колоссальные 15,000 LP."
+				""
+				"Ключевой материал для создания Кузни Свитков в следующей эпохе."
+			]
+			id: "100000000000E600"
+			rewards: [{
+				count: 2
+				id: "100000000000E601"
+				item: "bloodmagic:demonslate"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000000E602"
+				item: "bloodmagic:demonslate"
+				title: "Создать Демонический Сланец"
+				type: "item"
+			}]
+			title: "Демонический Сланец (Demonic Slate)"
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"100000000000E600"
+				"100000000000E500"
+			]
+			description: [
+				"§7[Испытание перехода]§r"
+				""
+				"Вы подчинили магию крови, возвели алтарь 4-го уровня, обуздали Демоническую Волю, активировали древние ритуалы и сковали Демонический Сланец."
+				""
+				"§6Финальное требование:§r"
+				"Подтвердите наличие Демонического Сланца (§eDemonic Slate§r), чтобы завершить Эпоху 5 и получить партию Арканной Эссенции для перехода в §bЭпоху 6: Архимаг (Iron's Spells 'n Spellbooks)§r."
+			]
+			id: "100000000000E700"
+			rewards: [{
+				count: 16
+				id: "100000000000E701"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "100000000000E702"
+				item: "bloodmagic:demonslate"
+				title: "Подтвердить Демонический Сланец"
+				type: "item"
+			}]
+			title: "ВРАТА ЭПОХИ 5: Владыка Крови"
+			x: 14.0d
+			y: 0.0d
+		}
+	]
+	title: "Эпоха 5: Темные Алтари (Blood Magic)"
+}

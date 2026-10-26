@@ -1,0 +1,929 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "epoch_2"
+	group: ""
+	icon: "apotheosis:gem"
+	id: "2000000000000001"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000002000"]
+			description: [
+				"§7[Пассивная прогрессия]§r"
+				""
+				"Помимо экипировки, в этой эпохе начинает развиваться сам персонаж. Мод §bPufferfish's Skills§r вводит разветвленное древо пассивных талантов."
+				""
+				"§6Управление и прокачка:§r"
+				"• §eМеню талантов:§r откройте древо клавишей §6[K]§r (или §6[O]§r)."
+				"• §eПолучение очков:§r очки навыков начисляются при накоплении опыта и уничтожении опасных врагов."
+				"• §eСпециализации:§r возможность комбинировать физический урон, защиту, вампиризм и критические атаки."
+			]
+			id: "1000000000003100"
+			rewards: [{
+				count: 8
+				id: "1000000000003101"
+				item: "minecraft:experience_bottle"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003102"
+				item: "minecraft:glass_bottle"
+				title: "Получить бутылочку опыта"
+				type: "item"
+			}]
+			title: "Древо навыков персонажа"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000003100"]
+			description: [
+				"§7[Ветка ближнего боя]§r"
+				""
+				"Увеличивает базовый физический урон, процентную прибавку к атакам мечами и топорами, а также показатель пробивания брони противников."
+			]
+			id: "1000000000003200"
+			rewards: [{
+				count: 4
+				id: "1000000000003201"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003202"
+				item: {
+					Count: 1
+					id: "minecraft:iron_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Экипировать меч воина"
+				type: "item"
+			}]
+			title: "Путь Воина: Физическая мощь"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000003200"]
+			description: [
+				"§7[Агрессивный бой]§r"
+				""
+				"Таланты берсерка активируют кражу здоровья (§eLifesteal§r) при нанесении ударов и повышают урон при падении здоровья ниже критической отметки."
+			]
+			id: "1000000000003300"
+			rewards: [{
+				count: 4
+				id: "1000000000003301"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003302"
+				item: "minecraft:golden_apple"
+				title: "Золотое яблоко для берсерка"
+				type: "item"
+			}]
+			title: "Путь Берсерка: Вампиризм"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000003100"]
+			description: [
+				"§7[Защитная стойка]§r"
+				""
+				"Прокачивает показатели плоской брони, процентное сопротивление любому входящему урону и устойчивость к отбрасыванию ударами боссов."
+			]
+			id: "1000000000003400"
+			rewards: [{
+				count: 4
+				id: "1000000000003401"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003402"
+				item: {
+					Count: 1
+					id: "minecraft:shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Экипировать щит танка"
+				type: "item"
+			}]
+			title: "Путь Танка: Несокрушимость"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1000000000003400"]
+			description: [
+				"§7[Точные атаки]§r"
+				""
+				"Увеличивает шанс нанесения критического удара, множитель крит-урона и общую скорость перемещения персонажа в сражениях."
+			]
+			id: "1000000000003500"
+			rewards: [{
+				count: 16
+				id: "1000000000003501"
+				item: "minecraft:arrow"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003502"
+				item: "minecraft:feather"
+				title: "Добыть перо ловкости"
+				type: "item"
+			}]
+			title: "Путь Ловкача: Криты и Скорость"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1000000000003500"]
+			description: [
+				"§7[Стрелковое искусство]§r"
+				""
+				"Увеличивает скорость натяжения тетивы, начальную скорость полета стрел и дает шанс не израсходовать стрелу при выстреле."
+			]
+			id: "1000000000003600"
+			rewards: [{
+				count: 8
+				id: "1000000000003601"
+				item: "minecraft:spectral_arrow"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003602"
+				item: {
+					Count: 1
+					id: "minecraft:bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать боевой лук"
+				type: "item"
+			}]
+			title: "Путь Стрелка: Дальний бой"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1000000000003100"]
+			description: [
+				"§7[Духовная энергия]§r"
+				""
+				"Сферы Духа (§eSpirit Orbs§r) выпадают с боссов подземелий, элитных монстров и за завершение ключевых квестов."
+				""
+				"§6Применение:§r Статуи Богини принимают 4 сферы в обмен на постоянное увеличение здоровья или запаса выносливости."
+			]
+			id: "1000000000003700"
+			rewards: [{
+				id: "1000000000003701"
+				item: "paraglider:spirit_orb"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003702"
+				item: "paraglider:spirit_orb"
+				title: "Собрать Сферу Духа"
+				type: "item"
+			}]
+			title: "Сферы Духа (Spirit Orbs)"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1000000000003700"]
+			description: [
+				"§7[Святилища благословения]§r"
+				""
+				"Каменные статуи встречаются в центрах крупных деревень и на вершинах высоких пиков гор §aTerralith§r."
+				""
+				"§6Взаимодействие:§r"
+				"• Нажмите §6[ПКМ]§r по статуе, имея в инвентаре не менее 4 Сфер Духа."
+				"• Выберите желаемую награду: Сосуд Сердца или Сосуд Выносливости."
+			]
+			id: "1000000000003800"
+			rewards: [{
+				id: "1000000000003801"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003802"
+				item: "paraglider:spirit_orb"
+				title: "Собрать 4 Сферы Духа"
+				type: "item"
+			}]
+			title: "Статуи Богини"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1000000000003800"]
+			description: [
+				"§7[Увеличение максимального HP]§r"
+				""
+				"Постоянное расширение запаса жизненных сил персонажа."
+				""
+				"§6Использование:§r зажмите §6[ПКМ]§r с сосудом в руке, чтобы навсегда добавить §c+1 полное сердце§r к шкале здоровья."
+			]
+			id: "1000000000003900"
+			rewards: [{
+				id: "1000000000003901"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003902"
+				item: "paraglider:heart_container"
+				title: "Получить Heart Container"
+				type: "item"
+			}]
+			title: "Сосуд Сердца (Heart Container)"
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1000000000003800"]
+			description: [
+				"§7[Запас энергии]§r"
+				""
+				"Расширяет зеленое колесо стамины персонажа."
+				""
+				"§6Эффект:§r увеличивает доступное время спринта, плавания, карабканья по скалам и количество боевых кувырков §bCombat Roll§r."
+			]
+			id: "1000000000003A00"
+			rewards: [{
+				count: 4
+				id: "1000000000003A01"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003A02"
+				item: "paraglider:stamina_vessel"
+				title: "Получить Stamina Vessel"
+				type: "item"
+			}]
+			title: "Сосуд Выносливости (Stamina Vessel)"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1000000000003A00"]
+			description: [
+				"§7[Планирование с высоты]§r"
+				""
+				"Позволяет плавно парить по воздуху при прыжках с гор и возвышенностей."
+				""
+				"§6Особенности:§r"
+				"• Держите параплан в руке во время падения для перехода в режим планирования."
+				"• Восходящие потоки дыма от походных костров поднимают параплан на большую высоту."
+			]
+			id: "1000000000003B00"
+			rewards: [{
+				count: 2
+				id: "1000000000003B01"
+				item: "paraglider:spirit_orb"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003B02"
+				item: "paraglider:paraglider"
+				title: "Скрафтить параплан"
+				type: "item"
+			}]
+			title: "Параплан странника"
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1000000000003B00"]
+			description: [
+				"§7[Перераспределение характеристик]§r"
+				""
+				"Темные рогатые статуи встречаются в глухих подземных гротах и заброшенных поселениях."
+				""
+				"§6Функция:§r за небольшую плату изумрудами позволяет обменять вложенные Сосуды Сердца на Сосуды Выносливости или обратно."
+			]
+			id: "1000000000003C00"
+			rewards: [{
+				id: "1000000000003C01"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000003C02"
+				item: "minecraft:emerald"
+				title: "Приготовить плату статуе"
+				type: "item"
+			}]
+			title: "Статуя Демона: Респециализация"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1000000000003100"]
+			description: [
+				"§7[Апофеоз: Модификаторы снаряжения]§r"
+				""
+				"В данжах и с чемпионов падает оружие и доспехи со случайными аффиксами и цветовой градацией рангов."
+				""
+				"§6Градация редкостей:§r"
+				"• §fОбычный (Common)§r — базовые параметры."
+				"• §aНеобычный (Uncommon)§r — 1 дополнительный аффикс."
+				"• §9Редкий (Rare)§r — 2 случайных свойства."
+				"• §5Эпический (Epic)§r — 3 мощных аффикса."
+				"• §6Мифический (Mythic)§r — максимальные показатели."
+				"• §cДревний (Ancient)§r — уникальные артефактные механики."
+			]
+			id: "0D089489A017B83E"
+			rewards: [{
+				count: 4
+				id: "6908322D8A1CC041"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "516C52E6F249E4AF"
+				item: "minecraft:iron_ingot"
+				title: "Слитки для снаряжения"
+				type: "item"
+			}]
+			title: "Система редкостей Apotheosis"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Разбор трофеев]§r"
+				""
+				"Позволяет разбирать ненужную цветную экипировку на ценные магические компоненты."
+				""
+				"§6Выходные материалы:§r"
+				"• Осколки редкостей (§eScrap§r) соответствующего ранга (Rare, Epic, Mythic)."
+				"• Пыль самоцветов (§eGem Dust§r), необходимая для перековки и огранки."
+			]
+			id: "2C78FEF566DAFBF9"
+			rewards: [{
+				count: 4
+				id: "58EDAC36FBFD8600"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "22FB5EF9200D839D"
+				item: "apotheosis:salvaging_table"
+				title: "Создать Стол Утилизации"
+				type: "item"
+			}]
+			title: "Стол Утилизации (Salvaging Table)"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Модификация характеристик]§r"
+				""
+				"Служит для переролла нежелательных аффиксов и повышения ранга редкости любимого оружия."
+				""
+				"§6Процесс:§r"
+				"• Поместите экипировку в левый слот."
+				"• Добавьте пыль самоцветов и осколки нужной редкости."
+				"• Выберите доступный рецепт перековки."
+			]
+			id: "5D10E27DE808E7F4"
+			rewards: [{
+				count: 8
+				id: "0FA017A7DD293E4A"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "3C3D3D717155C9C5"
+				item: "apotheosis:reforging_table"
+				title: "Создать Стол Перековки"
+				type: "item"
+			}]
+			title: "Стол Перековки (Reforging Table)"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Инкрустация]§r"
+				""
+				"Магические кристаллы, дающие постоянные пассивные бонусы при установке в гнезда оружия и брони."
+				""
+				"§6Разновидности:§r кристаллы разделяются по типам бонусов (стихийный урон, защита, скорость атаки, вампиризм) и качеству (от Cracked до Flawless)."
+			]
+			id: "6BBAD507703BD4EB"
+			rewards: [{
+				count: 2
+				id: "07D2AF514D64373C"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "4E4B8CF8A4B4596C"
+				item: "apotheosis:gem"
+				title: "Найти драгоценный камень"
+				type: "item"
+			}]
+			title: "Драгоценные камни (Gems)"
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Повышение ранга камней]§r"
+				""
+				"Позволяет улучшать качество найденных драгоценных камней."
+				""
+				"§6Принцип:§r объединяя расколотые кристаллы и расходуя §eGem Dust§r, вы создаете идеальные безупречные самоцветы максимальной силы."
+			]
+			id: "4EB9E5EF11820764"
+			rewards: [{
+				count: 8
+				id: "36E5BEEC86A33653"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "14468FEF4CB3D8F5"
+				item: "apotheosis:gem_cutting_table"
+				title: "Создать Стол Огранки"
+				type: "item"
+			}]
+			title: "Стол Огранки (Gem Cutting Table)"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Установка камней]§r"
+				""
+				"Если на вашем оружии или броне есть надпись §bEmpty Socket§r (пустое гнездо), соедините предмет с камнем на обычной наковальне."
+				""
+				"Камень надежно закрепится в сокете, добавив свои свойства к параметрам оружия."
+			]
+			id: "58321ABE71B89745"
+			rewards: [{
+				id: "0E150E6B0F51A8B8"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "4D7726F69576C291"
+				item: "minecraft:anvil"
+				title: "Использовать наковальню"
+				type: "item"
+			}]
+			title: "Инкрустация на Наковальне"
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Дополнительные гнезда]§r"
+				""
+				"Позволяет пробить новое пустое гнездо под самоцвет в экипировке, где сокетов не было или они уже заполнены (до 3-4 сокетов на предмет)."
+			]
+			id: "748A8E3460F0697E"
+			rewards: [{
+				id: "3B495FDAE78762F9"
+				item: "apotheosis:sigil_of_withdrawal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "72A574BDD38437DC"
+				item: "apotheosis:sigil_of_socketing"
+				title: "Получить Sigil of Socketing"
+				type: "item"
+			}]
+			title: "Сверло для сокетов (Sigil of Socketing)"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Безопасный демонтаж]§r"
+				""
+				"Позволяет извлечь ценные совершенные самоцветы из устаревшего оружия обратно в инвентарь без разрушения предмета."
+			]
+			id: "214296A3BBDE479F"
+			rewards: [{
+				count: 8
+				id: "0E30B16ED126CFEF"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "6ABC05A2A05A83F7"
+				item: "apotheosis:sigil_of_withdrawal"
+				title: "Получить Sigil of Withdrawal"
+				type: "item"
+			}]
+			title: "Извлечение камней (Sigil of Withdrawal)"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Модуль спавнеров]§r"
+				""
+				"Мод §bApotheosis§r позволяет выкапывать клетки монстров киркой с §bШёлковым касанием§r и настраивать их параметры."
+				""
+				"§6Модификаторы (ПКМ по спавнеру):§r"
+				"• §eСахар:§r снижает минимальную задержку волн."
+				"• §eЧасы:§r снижают максимальную задержку волн."
+				"• §eСветопыль:§r увеличивает радиус спавна мобов."
+				"• §eБелая шерсть:§r отключает проверку присутствия игрока."
+			]
+			id: "147DCA99F43E3303"
+			rewards: [{
+				id: "3B90E3876E81EA93"
+				item: "minecraft:clock"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "6371A985D5DF7834"
+				item: "minecraft:sugar"
+				title: "Сахар для ускорения спавнера"
+				type: "item"
+			}]
+			title: "Модификаторы спавнеров"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Модуль зачарования]§r"
+				""
+				"Переработанная система зачарований базируется на трех параметрах полок:"
+				""
+				"§6Ключевые характеристики стола:§r"
+				"• §eEterna (Этерна):§r максимальный уровень чар (разгон до 50-100 уровня)."
+				"• §eQuanta (Кванты):§r вариативность и случайный разброс силы чар."
+				"• §eArcana (Аркана):§r шанс появления сокровищных и редких зачарований."
+			]
+			id: "78FCADB93C62AE3B"
+			rewards: [{
+				count: 16
+				id: "474F60106D494304"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "0F62F14CE9DA1AAE"
+				item: "minecraft:enchanting_table"
+				title: "Стол зачарований"
+				type: "item"
+			}]
+			title: "Продвинутое зачарование: Этерна"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Полка Нижнего мира]§r"
+				""
+				"Специализированная книжная полка, дающая значительный прирост показателя §eEterna§r и повышающая §eQuanta§r стола зачарований."
+			]
+			id: "154EF2D41ED4FC8C"
+			rewards: [{
+				count: 8
+				id: "43B01077FC82A136"
+				item: "minecraft:nether_brick"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "02A37123B7A8A150"
+				item: "apotheosis:hellshelf"
+				title: "Создать Hellshelf"
+				type: "item"
+			}]
+			title: "Адская книжная полка (Hellshelf)"
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Полка глубин]§r"
+				""
+				"Морская полка стабилизирует разброс зачарований, повышая показатель §eArcana§r и увеличивая вероятность выпадения редких чар."
+			]
+			id: "230530F92B6C6345"
+			rewards: [{
+				count: 8
+				id: "79855E6052F09E10"
+				item: "minecraft:prismarine_crystals"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "22E30DA6C0776C79"
+				item: "apotheosis:seashelf"
+				title: "Создать Seashelf"
+				type: "item"
+			}]
+			title: "Морская книжная полка (Seashelf)"
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			description: [
+				"§7[Апофеоз: Извлечение зачарований]§r"
+				""
+				"Позволяет снять случайные зачарования с экипировки и перенести их на зачарованную книгу на наковальне, сохраняя ценные чары при смене брони."
+			]
+			id: "6198D99161DBB631"
+			rewards: [{
+				count: 8
+				id: "0A2DE0D024644C05"
+				item: "minecraft:experience_bottle"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1BB95E261A6A3F28"
+				item: "apotheosis:scrap_tome"
+				title: "Получить Tome of Scrapping"
+				type: "item"
+			}]
+			title: "Фолиант снятия чар (Tome of Scrapping)"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1000000000003100"]
+			description: [
+				"§7[Специальная экипировка]§r"
+				""
+				"Интерфейс мода §bCurios API§r добавляет выделенные слоты под амулеты, пояса, перчатки и кольца."
+				""
+				"§6Как открыть:§r нажмите иконку кольца рядом с моделью персонажа в стандартном меню инвентаря."
+			]
+			id: "419C0C411C6F49CC"
+			rewards: [{
+				count: 8
+				id: "5AEA35DF028980EC"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "44B55187B83FCA2F"
+				item: "minecraft:gold_ingot"
+				title: "Золото для реликвий"
+				type: "item"
+			}]
+			title: "Слоты бижутерии Curios"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			description: [
+				"§7[Боевые перчатки]§r"
+				""
+				"Экипируется в слот перчаток: повышает базовую скорость атаки холодным оружием и активирует непрерывную авто-атаку комбо при зажатии §6[ЛКМ]§r."
+			]
+			id: "11FD47D008BB87F3"
+			rewards: [{
+				id: "1DE1BFF05277ACCB"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "3B641BB5FA8C5EC7"
+				item: "artifacts:feral_claws"
+				title: "Найти Дикие Когти в руинах"
+				type: "item"
+			}]
+			title: "Дикие Когти (Feral Claws)"
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			description: [
+				"§7[Двойной прыжок]§r"
+				""
+				"Экипируется в слот реликвий: позволяет совершить второй толчок в воздухе нажатием клавиши прыжка, спасая от падения с обрывов в данжах."
+			]
+			id: "1000000000004C00"
+			rewards: [{
+				count: 8
+				id: "1000000000004C01"
+				item: "minecraft:feather"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000004C02"
+				item: "artifacts:cloud_in_a_bottle"
+				title: "Найти Облако в банке"
+				type: "item"
+			}]
+			title: "Облако в банке (Cloud in a Bottle)"
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"§7[Защита от серийных ударов]§r"
+				""
+				"Экипируется в слот ожерелья: удваивает время неуязвимости после каждого полученного удара, предотвращая мгновенную смерть в толпе врагов."
+			]
+			id: "1000000000004D00"
+			rewards: [{
+				count: 2
+				id: "1000000000004D01"
+				item: "minecraft:potion"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000004D02"
+				item: "artifacts:cross_necklace"
+				title: "Найти Крест в сокровищницах"
+				type: "item"
+			}]
+			title: "Обережный Крест (Cross Necklace)"
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			description: [
+				"§7[Иммунитет к негативным эффектам]§r"
+				""
+				"Экипируется в слот пояса: сводит продолжительность негативных статусов (яда пещерных пауков, иссушения и слабости) к долям секунды."
+			]
+			id: "1000000000004E00"
+			rewards: [{
+				count: 4
+				id: "1000000000004E01"
+				item: "minecraft:golden_carrot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000004E02"
+				item: "artifacts:antidote_vessel"
+				title: "Найти Сосуд Антидота"
+				type: "item"
+			}]
+			title: "Сосуд Антидота (Antidote Vessel)"
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1000000000004D00"]
+			description: [
+				"§7[Защита от огня]§r"
+				""
+				"Экипируется в слот пояса: при возгорании или падении в лаву моментально накладывает временный эффект огнестойкости."
+			]
+			id: "1000000000004F00"
+			rewards: [{
+				count: 4
+				id: "1000000000004F01"
+				item: "minecraft:magma_cream"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000004F02"
+				item: "artifacts:obsidian_skull"
+				title: "Найти Обсидиановый Череп"
+				type: "item"
+			}]
+			title: "Обсидиановый Череп (Obsidian Skull)"
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1000000000003B00"]
+			description: [
+				"§7[Элитные противники]§r"
+				""
+				"В глубоких катакомбах и на верхних ярусах башен спавнятся именные чемпионы мода §bApotheosis§r с уникальными цветными аурами."
+				""
+				"§6Награда:§r с чемпионов гарантированно выпадает мифическое снаряжение и редчайшие камни для инкрустации."
+			]
+			id: "1000000000005000"
+			rewards: [{
+				id: "1000000000005001"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000005002"
+				item: "minecraft:diamond"
+				title: "Добыть алмазы с боссов"
+				type: "item"
+			}]
+			title: "Охота на чемпионов Apotheosis"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1000000000005000"
+				"1000000000003900"
+			]
+			description: [
+				"§7[Испытание перехода]§r"
+				""
+				"Ваше тело укреплено дополнительными сердцами здоровья, древо талантов раскачано, а экипировка модифицирована самоцветами и аффиксами Apotheosis."
+				""
+				"§6Финальное требование:§r"
+				"Активируйте Сосуд Сердца (§eHeart Container§r), чтобы завершить Эпоху 2 и получить партию Сгустков Источника (§eSource Gem§r) для разблокировки §bЭпохи 3: Искры Магии (Ars Nouveau)§r."
+			]
+			id: "1000000000005100"
+			rewards: [{
+				count: 4
+				id: "1000000000005101"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1000000000005102"
+				item: "paraglider:heart_container"
+				title: "Использовать Сосуд Сердца"
+				type: "item"
+			}]
+			title: "ВРАТА ЭПОХИ 2: Пробуждение Тела и Духа"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "Эпоха 2: Апофеоз и Развитие"
+}

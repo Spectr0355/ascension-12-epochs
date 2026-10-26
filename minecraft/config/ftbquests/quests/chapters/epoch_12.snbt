@@ -1,0 +1,827 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "epoch_12"
+	group: "3F14D79910B03C58"
+	icon: "avaritia:infinity_ingot"
+	id: "200000000000000B"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["100000000001E800"]
+			description: [
+				"§7[Улавливание космической пыли]§r"
+				"Вы достигли вершины развития — мода Avaritia."
+				""
+				"§6Принцип работы:§r"
+				"• Нейтрониевый сборщик медленно конденсирует частицы субатомной материи прямо из вакуума космического пространства."
+				"• Каждые несколько минут генерирует Нейтрониевую кучку (Neutron Pile)."
+				""
+				"§aСовет:§r"
+				"• Для быстрого прогресса постройте массив из десятков или сотен сборщиков, подключив их напрямую к МЭ сети!"
+			]
+			id: "100000000001F000"
+			rewards: [{
+				count: 16
+				id: "100000000001F001"
+				item: "avaritia:neutron_pile"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001F002"
+				item: "avaritia:neutron_collector"
+				title: "Построить Neutron Collector"
+				type: "item"
+			}]
+			title: "Нейтрониевый Сборщик (Neutron Collector)"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000001F000"]
+			description: [
+				"§7[Субатомная пыль]§r"
+				"Мельчайшие крупицы сверхплотного вещества."
+				""
+				"§6Крафт:§r"
+				"• 9 кучек нейтрония прессуются в один самородок (Neutron Nugget)."
+			]
+			id: "100000000001F100"
+			rewards: [{
+				count: 4
+				id: "100000000001F101"
+				item: "avaritia:neutron_nugget"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001F102"
+				item: "avaritia:neutron_pile"
+				title: "Собрать Neutron Pile"
+				type: "item"
+			}]
+			title: "Кучка Нейтрония"
+			x: 1.5d
+			y: -0.8d
+		}
+		{
+			dependencies: ["100000000001F100"]
+			description: [
+				"§7[Сжатый нейтроний]§r"
+				"Самородки используются в промежуточных крафтах и служат сырьем для слитков."
+			]
+			id: "100000000001F200"
+			rewards: [{
+				count: 8
+				id: "100000000001F201"
+				item: "avaritia:neutron_nugget"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001F202"
+				item: "avaritia:neutron_nugget"
+				title: "Получить Neutron Nugget"
+				type: "item"
+			}]
+			title: "Самородок Нейтрония"
+			x: 3.0d
+			y: -0.8d
+		}
+		{
+			dependencies: ["100000000001F200"]
+			description: [
+				"§7[Несокрушимый металл]§r"
+				"Слиток нейтрония настолько плотен, что чайная ложка его вещества весит миллиарды тонн."
+				""
+				"§6Применение:§r"
+				"• Основа для создания Нейтрониевого Компрессора и брони Бесконечности."
+			]
+			id: "100000000001F300"
+			rewards: [{
+				id: "100000000001F301"
+				item: "avaritia:neutronium_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001F302"
+				item: "avaritia:neutronium_ingot"
+				title: "Выковать Слиток Нейтрония"
+				type: "item"
+			}]
+			title: "Слиток Нейтрония"
+			x: 4.5d
+			y: -0.8d
+		}
+		{
+			dependencies: ["100000000001F300"]
+			description: [
+				"§7[Монолит гравитации]§r"
+				"Монолитный блок чистого нейтрония. Используется в качестве утяжелителя компрессора."
+			]
+			id: "100000000001F400"
+			rewards: [{
+				count: 4
+				id: "100000000001F401"
+				item: "minecraft:netherite_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001F402"
+				item: "avaritia:neutronium_block"
+				title: "Собрать Neutronium Block"
+				type: "item"
+			}]
+			title: "Блок Плотного Нейтрония"
+			x: 6.0d
+			y: -0.8d
+		}
+		{
+			dependencies: ["100000000001F000"]
+			description: [
+				"§7[Кристаллическая основа]§r"
+				"Алмазы, сплетенные в идеальную гексагональную кристаллическую решетку."
+			]
+			id: "100000000001F500"
+			rewards: [{
+				count: 8
+				id: "100000000001F501"
+				item: "avaritia:diamond_lattice"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001F502"
+				item: "avaritia:diamond_lattice"
+				title: "Создать Diamond Lattice"
+				type: "item"
+			}]
+			title: "Алмазная Решетка (Diamond Lattice)"
+			x: 1.5d
+			y: -2.2d
+		}
+		{
+			dependencies: ["100000000001F500"]
+			description: [
+				"§7[Светоносный металл]§r"
+				"Сплав алмазной решетки и звезд незера образует ослепительно сияющий кристаллический металл."
+			]
+			id: "100000000001F600"
+			rewards: [{
+				id: "100000000001F601"
+				item: "avaritia:crystal_matrix_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001F602"
+				item: "avaritia:crystal_matrix_ingot"
+				title: "Сплавить Crystal Matrix Ingot"
+				type: "item"
+			}]
+			title: "Слиток Кристальной Матрицы"
+			x: 3.0d
+			y: -2.2d
+		}
+		{
+			dependencies: ["100000000001F000"]
+			description: [
+				"§7[Компактное дерево]§r"
+				"Сжатие десятков и сотен обычных верстаков для подготовки корпуса Экстремального Верстака."
+			]
+			id: "100000000001F700"
+			rewards: [{
+				count: 64
+				id: "100000000001F701"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001F702"
+				item: "avaritia:double_compressed_crafting_table"
+				title: "Сжать Верстаки"
+				type: "item"
+			}]
+			title: "Сжатые Верстаки"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"100000000001F600"
+				"100000000001F700"
+			]
+			description: [
+				"§7[Рабочее место богов]§r"
+				"Обычный верстак 3х3 больше не способен вместить формулы мироздания."
+				""
+				"§6Сетка 9х9:§r"
+				"• Содержит 81 слот для ингредиентов высшего порядка."
+				"• Только на этом верстаке собираются Катализаторы Бесконечности и Оружие Творца!"
+			]
+			id: "100000000001F800"
+			rewards: [{
+				count: 4
+				id: "100000000001F801"
+				item: "avaritia:crystal_matrix_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "100000000001F802"
+				item: "avaritia:extreme_crafting_table"
+				title: "Построить Extreme Crafting Table"
+				type: "item"
+			}]
+			title: "Экстремальный Верстак 9х9 (Extreme Crafting Table)"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["100000000001F300"]
+			description: [
+				"§7[Гравитационный коллапс]§r"
+				"Подавайте в Компрессор сотни тысяч единиц металлов и минералов через МЭ сеть."
+				""
+				"§6Рождение Сингулярности:§r"
+				"• Под давлением в миллиарды атмосфер металл коллапсирует в черную микродыру — Сингулярность!"
+			]
+			id: "100000000001F900"
+			rewards: [{
+				count: 2
+				id: "100000000001F901"
+				item: "avaritia:neutronium_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001F902"
+				item: "avaritia:compressor"
+				title: "Построить Compressor"
+				type: "item"
+			}]
+			title: "Нейтрониевый Компрессор (Compressor)"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["100000000001F900"]
+			description: [
+				"§7[Миллионы слитков]§r"
+				"Сожмите железные, золотые и медные слитки."
+				""
+				"§6Ингредиенты:§r"
+				"• Каждая сингулярность содержит колоссальную массу ресурсов, сгенерированных вашими МЭ сетями и фермами."
+			]
+			id: "100000000001FA00"
+			rewards: [{
+				id: "100000000001FA01"
+				item: "avaritia:gold_singularity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001FA02"
+				item: "avaritia:iron_singularity"
+				title: "Сжать Iron Singularity"
+				type: "item"
+			}]
+			title: "Сингулярности Базовых Металлов"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["100000000001FA00"]
+			description: [
+				"§7[Алмазный и Незеритовый коллапс]§r"
+				"Сжатие десятков тысяч алмазов и незеритовых слитков в сверхплотные сингулярности."
+			]
+			id: "100000000001FB00"
+			rewards: [{
+				id: "100000000001FB01"
+				item: "avaritia:netherite_singularity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001FB02"
+				item: "avaritia:diamond_singularity"
+				title: "Сжать Diamond Singularity"
+				type: "item"
+			}]
+			title: "Сингулярности Самоцветов"
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["100000000001FB00"]
+			description: [
+				"§7[Высшая плотность алхимии]§r"
+				"Сжатие Темной и Красной материи в компрессоре образует стабильные сингулярности абсолютной массы."
+			]
+			id: "100000000001FC00"
+			rewards: [{
+				id: "100000000001FC01"
+				item: "avaritia:dark_matter_singularity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001FC02"
+				item: "avaritia:red_matter_singularity"
+				title: "Создать Red Matter Singularity"
+				type: "item"
+			}]
+			title: "Сингулярности Материи ProjectE"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["100000000001F800"]
+			description: [
+				"§7[Охотник за черепами]§r"
+				"Убийство скелета этим мечом со 100% шансом превращает его череп в череп Визер-скелета."
+			]
+			id: "100000000001FD00"
+			rewards: [{
+				count: 4
+				id: "100000000001FD01"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001FD02"
+				item: {
+					Count: 1
+					id: "avaritia:skullfire_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Skullfire Sword"
+				type: "item"
+			}]
+			title: "Меч Черепного Пламени (Skullfire Sword)"
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["100000000001FD00"]
+			description: [
+				"§7[Гравитационная аномалия]§r"
+				"Брошенная жемчужина создает черную дыру, засасывающую все блоки и мобов вокруг в эпицентр сингулярности."
+			]
+			id: "100000000001FE00"
+			rewards: [{
+				id: "100000000001FE01"
+				item: "avaritia:endest_pearl"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001FE02"
+				item: "avaritia:endest_pearl"
+				title: "Создать Endest Pearl"
+				type: "item"
+			}]
+			title: "Жемчужина Конца Миров (Endest Pearl)"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["100000000001FD00"]
+			description: [
+				"§7[Мясная бесконечность]§r"
+				"Блюдо, объединяющее сырое и жареное мясо всех известных биологических видов мультивселенной."
+			]
+			id: "100000000001FF00"
+			rewards: [{
+				count: 4
+				id: "100000000001FF01"
+				item: "avaritia:cosmic_meatballs"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001FF02"
+				item: "avaritia:cosmic_meatballs"
+				title: "Приготовить Cosmic Meatballs"
+				type: "item"
+			}]
+			title: "Космические Тефтели"
+			x: 5.0d
+			y: -4.8d
+		}
+		{
+			dependencies: ["100000000001FF00"]
+			description: [
+				"§7[Растительная бесконечность]§r"
+				"Рагу, сваренное из всех овощей, ягод, яблок и грибов мира."
+				""
+				"§6Эффект:§r"
+				"• Дарует бесконечную регенерацию и полное насыщение."
+			]
+			id: "1000000000020000"
+			rewards: [{
+				count: 4
+				id: "1000000000020001"
+				item: "avaritia:ultimate_stew"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000020002"
+				item: "avaritia:ultimate_stew"
+				title: "Сварить Ultimate Stew"
+				type: "item"
+			}]
+			title: "Абсолютное Рагу (Ultimate Stew)"
+			x: 6.5d
+			y: -4.8d
+		}
+		{
+			dependencies: [
+				"100000000001F800"
+				"100000000001FC00"
+				"1000000000020000"
+			]
+			description: [
+				"§7[Синтез абсолютной материи]§r"
+				"Катализатор объединяет ВСЕ сингулярности металлов, самоцветов, космическую еду и жемчужину конца миров."
+				""
+				"§6Венец сжатия:§r"
+				"• Служит главным ядром для выплавки Слитка Бесконечности."
+			]
+			id: "1000000000020100"
+			rewards: [{
+				id: "1000000000020101"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000020102"
+				item: "avaritia:infinity_catalyst"
+				title: "Создать Infinity Catalyst"
+				type: "item"
+			}]
+			title: "Катализатор Бесконечности (Infinity Catalyst)"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1000000000020100"]
+			description: [
+				"§7[Материал Всемогущества]§r"
+				"Переливающийся всеми цветами радуги металл Творцов."
+				""
+				"§6Божественные свойства:§r"
+				"• Изделия из него игнорируют саму концепцию урона, смерти и законов физики игры."
+				"• Открывает доступ к крафту оружия и брони Бесконечности!"
+			]
+			id: "1000000000020200"
+			rewards: [{
+				id: "1000000000020201"
+				item: "avaritia:infinity_block"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.8d
+			tasks: [{
+				id: "1000000000020202"
+				item: "avaritia:infinity_ingot"
+				title: "Сковать Infinity Ingot"
+				type: "item"
+			}]
+			title: "Слиток Бесконечности (Infinity Ingot)"
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1000000000020200"]
+			description: [
+				"§7[Черная дыра для лута]§r"
+				"Сундук с бездонной емкостью: каждый слот вмещает более 2 миллиардов предметов одного типа."
+			]
+			id: "1000000000020300"
+			rewards: [{
+				id: "1000000000020301"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000020302"
+				item: "avaritia:infinity_chest"
+				title: "Создать Infinity Chest"
+				type: "item"
+			}]
+			title: "Сундук Бесконечности (Infinity Chest)"
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1000000000020200"]
+			description: [
+				"§7[Оружие Абсолютного Стирания]§r"
+				"Урон: §4§lБЕСКОНЕЧНОСТЬ (∞)§r."
+				""
+				"§eСВОЙСТВО МЕЧА:§r"
+				"• Меч не наносит урон — он СТИРАЕТ сущность из оперативной памяти сервера!"
+				"• Убивает боссов Cataclysm, Вардена, игроков в творческом режиме и бессмертных мобов с ОДНОГО клика."
+				"• Дроп с мобов автоматически отправляется вам в инвентарь."
+			]
+			id: "1000000000020400"
+			rewards: [{
+				count: 2
+				id: "1000000000020401"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000020402"
+				item: "avaritia:infinity_sword"
+				title: "Выковать Sword of the Cosmos"
+				type: "item"
+			}]
+			title: "Меч Космоса (Sword of the Cosmos)"
+			x: 11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1000000000020400"]
+			description: [
+				"§7[Уничтожитель материи]§r"
+				"Кирка Бесконечности ломает АБСОЛЮТНО ЛЮБОЙ блок, включая коренную породу (Bedrock) и порталы Края."
+				""
+				"§6Режим Молота:§r"
+				"• Нажатие [Shift + ПКМ] активирует режим аннигиляции породы 16х16х16 блоков за взмах."
+			]
+			id: "1000000000020500"
+			rewards: [{
+				id: "1000000000020501"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000020502"
+				item: "avaritia:infinity_pickaxe"
+				title: "Сковать World Breaker"
+				type: "item"
+			}]
+			title: "Сокрушитель Миров (World Breaker)"
+			x: 12.5d
+			y: 1.2d
+		}
+		{
+			dependencies: ["1000000000020400"]
+			description: [
+				"§7[Дождь стрел]§r"
+				"Стрела, выпущенная из лука, разрывается в воздухе на сотни самонаводящихся световых стрел, выжигающих всю локацию."
+			]
+			id: "1000000000020600"
+			rewards: [{
+				id: "1000000000020601"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000020602"
+				item: "avaritia:infinity_bow"
+				title: "Создать Longbow of the Heavens"
+				type: "item"
+			}]
+			title: "Лук Небес (Longbow of the Heavens)"
+			x: 12.5d
+			y: -0.2d
+		}
+		{
+			dependencies: ["1000000000020500"]
+			description: [
+				"§7[Топор Бесконечности]§r"
+				"Один удар по стволу дерева моментально срубает целый биом леса."
+			]
+			id: "1000000000020700"
+			rewards: [{
+				id: "1000000000020701"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000020702"
+				item: "avaritia:infinity_axe"
+				title: "Сковать Nature's Ruin"
+				type: "item"
+			}]
+			title: "Гибель Природы (Nature's Ruin)"
+			x: 14.0d
+			y: 1.2d
+		}
+		{
+			dependencies: ["1000000000020500"]
+			description: [
+				"§7[Лопата Бесконечности]§r"
+				"Моментально испаряет горы земли, гравия, песка и глины в радиусе чанка."
+			]
+			id: "1000000000020800"
+			rewards: [{
+				id: "1000000000020801"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000020802"
+				item: "avaritia:infinity_shovel"
+				title: "Сковать Planet Eater"
+				type: "item"
+			}]
+			title: "Пожиратель Планет (Planet Eater)"
+			x: 14.0d
+			y: 2.2d
+		}
+		{
+			dependencies: ["1000000000020200"]
+			description: [
+				"§7[Взор Всевидящего]§r"
+				"Дарует бесконечное дыхание под водой, ночное зрение, насыщение и иммунитет к любым отрицательным эффектам."
+			]
+			id: "1000000000020900"
+			rewards: [{
+				count: 2
+				id: "1000000000020901"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000020902"
+				item: "avaritia:infinity_helmet"
+				title: "Сковать Шлем Бесконечности"
+				type: "item"
+			}]
+			title: "Шлем Бесконечности"
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1000000000020900"]
+			description: [
+				"§7[Абсолютная Неуязвимость]§r"
+				"Носитель нагрудника НЕ МОЖЕТ ПОГИБНУТЬ НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ."
+				""
+				"§6Неуязвимость:§r"
+				"• Игнорирует команду /kill, падение в Пустоту, звуковые удары Вардена и лаву."
+				"• Дарует неограниченный полет на околосветовой скорости."
+			]
+			id: "1000000000020A00"
+			rewards: [{
+				count: 2
+				id: "1000000000020A01"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000020A02"
+				item: "avaritia:infinity_chestplate"
+				title: "Сковать Нагрудник Бесконечности"
+				type: "item"
+			}]
+			title: "Нагрудник Бесконечности"
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1000000000020A00"]
+			description: [
+				"§7[Иммунитет к стихиям]§r"
+				"Игрок полностью неуязвим к огню, кислоте, радиации и эффектам замедления."
+			]
+			id: "1000000000020B00"
+			rewards: [{
+				count: 2
+				id: "1000000000020B01"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000020B02"
+				item: "avaritia:infinity_leggings"
+				title: "Сковать Поножи Бесконечности"
+				type: "item"
+			}]
+			title: "Поножи Бесконечности"
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1000000000020B00"]
+			description: [
+				"§7[Шаги по небесам]§r"
+				"Увеличивают скорость бега в десятки раз и позволяют мгновенно взбегать на любые вертикальные горы без прыжков."
+			]
+			id: "1000000000020C00"
+			rewards: [{
+				count: 2
+				id: "1000000000020C01"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000020C02"
+				item: "avaritia:infinity_boots"
+				title: "Сковать Ботинки Бесконечности"
+				type: "item"
+			}]
+			title: "Ботинки Бесконечности"
+			x: 15.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1000000000020400"
+				"1000000000020500"
+				"1000000000020A00"
+				"1000000000020C00"
+			]
+			description: [
+				"§6§lВЕЛИКИЙ ТРИУМФ: ВОСХОЖДЕНИЕ ЗАВЕРШЕНО!§r"
+				""
+				"Ты начал свой путь простым бродягой в обветшалых руинах Обычного мира с ржавым мечом и костром."
+				""
+				"§eТвой путь сквозь 12 эпох:§r"
+				"• Ты перековывал снаряжение и постигал тайны Апофеоза;"
+				"• Начертал первые глифы в Ars Nouveau и обуздал ману Botania;"
+				"• Пролил кровь на алтарях Blood Magic и стал архимагом Iron's Spells;"
+				"• Покорил парящие острова Эфира, бездны Undergarden и миры Blue Skies;"
+				"• Сокрушил непобедимых титанов Cataclysm и ужас The Otherside;"
+				"• Построил цифровую империю AE2 и подчинил эквивалентный обмен ProjectE;"
+				"• И, наконец, скул оружие и броню Бесконечности Avaritia!"
+				""
+				"§bС этого мгновения ты больше не смертный. Ты — истинный Творец и Владыка этого мира.§r"
+				""
+				"§aПоздравляем с полным прохождением сборки Ascension: 12 Epochs!§r"
+			]
+			id: "1000000000021000"
+			rewards: [{
+				count: 64
+				id: "1000000000021001"
+				item: "avaritia:infinity_block"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.2d
+			tasks: [{
+				id: "1000000000021002"
+				item: "avaritia:infinity_sword"
+				title: "Меч Космоса"
+				type: "item"
+			}]
+			title: "ВЕНЕЦ ВОСХОЖДЕНИЯ: Ты Стал Богом"
+			x: 16.0d
+			y: 0.0d
+		}
+	]
+	title: "Эпоха 12: Становление Богом (Avaritia)"
+}

@@ -1,0 +1,845 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "epoch_10"
+	group: "3F14D79910B03C58"
+	icon: "ae2:controller"
+	id: "2000000000000009"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000018800"]
+			description: [
+				"§7[Цифровой мозг базы]§r"
+				"Вы вошли в цифровую эру высоких технологий Applied Energistics 2."
+				""
+				"§aВАЖНОЕ ИЗМЕНЕНИЕ СБОРКИ:§r"
+				"• Каналы AE2 §aПОЛНОСТЬЮ ОТКЛЮЧЕНЫ§r! Подключайте сколько угодно кабелей, шин и терминалов без ограничений."
+				"• Прессы высекателя больше не нужно искать по метеоритам — они крафтятся на обычном верстаке из железа и меди!"
+				""
+				"§6Назначение контроллера:§r"
+				"• Служит сердцем сети, распределяя энергию и координируя все подключенные устройства."
+			]
+			id: "1000000000019000"
+			rewards: [{
+				id: "1000000000019001"
+				item: "ae2:dense_energy_cell"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019002"
+				item: "ae2:controller"
+				title: "Установить МЭ Контроллер"
+				type: "item"
+			}]
+			title: "МЭ Контроллер: Без Каналов!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000019000"]
+			description: [
+				"§7[Питание системы]§r"
+				"МЭ Сеть требует постоянной подпитки энергией (FE)."
+				""
+				"§6Приемник энергии:§r"
+				"• Energy Acceptor преобразует Forge Energy (FE) во внутреннюю энергию AE."
+				"• Плотные энергетические ячейки (Dense Energy Cell) сохраняют резерв питания при перебоях генерации."
+			]
+			id: "1000000000019100"
+			rewards: [{
+				count: 16
+				id: "1000000000019101"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019102"
+				item: "ae2:energy_acceptor"
+				title: "Создать Energy Acceptor"
+				type: "item"
+			}]
+			title: "Энергия МЭ Сети"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000019100"]
+			description: [
+				"§7[Проводники цифры]§r"
+				"Истинный кварц (Certus Quartz) и Изменчивый кристалл (Fluix Crystal) — основа кабелей и чипов AE2."
+				""
+				"§6Выращивание:§r"
+				"• Бросьте в воду пыль истинного кварца, редстоун и кварц нижнего мира, чтобы получить кристаллы Флюикса."
+			]
+			id: "1000000000019200"
+			rewards: [{
+				count: 16
+				id: "1000000000019201"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019202"
+				item: "ae2:certus_quartz_crystal"
+				title: "Собрать Certus Quartz"
+				type: "item"
+			}]
+			title: "Кварц и Изменчивые Кристаллы"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000019200"]
+			description: [
+				"§7[Микроэлектроника]§r"
+				"Высекатель (Inscriber) прессует микросхемы для процессоров логики, вычислений и инженерии."
+				""
+				"§6Процессоры:§r"
+				"• Logic (Золото), Calculation (Истинный кварц), Engineering (Алмаз)."
+				"• Служат строительными блоками всех сложных механизмов сети."
+			]
+			id: "1000000000019300"
+			rewards: [{
+				count: 4
+				id: "1000000000019301"
+				item: "ae2:engineering_processor"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019302"
+				item: "ae2:inscriber"
+				title: "Построить Высекатель"
+				type: "item"
+			}]
+			title: "Высекатель и Процессоры"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000019300"]
+			description: [
+				"§7[Оцифровка материи]§r"
+				"МЭ Накопитель (ME Drive) вмещает до 10 ячеек хранения."
+				""
+				"§6Хранилище предметов:§r"
+				"• Забудьте о сотнях сундуков: тысячи предметов хранятся в байтах на ячейках памяти (от 1k до 64k и выше)."
+			]
+			id: "1000000000019400"
+			rewards: [{
+				id: "1000000000019401"
+				item: "ae2:item_storage_cell_64k"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019402"
+				item: "ae2:drive"
+				title: "Создать ME Drive"
+				type: "item"
+			}]
+			title: "МЭ Накопитель и Ячейки"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000019400"]
+			description: [
+				"§7[Универсальный интерфейс]§r"
+				"Подключите Терминал Крафта к кабелю сети."
+				""
+				"§6Удобство:§r"
+				"• Моментальный поиск предметов с фильтрами JEI."
+				"• Создание любых предметов прямо из цифрового хранилища в один клик."
+			]
+			id: "1000000000019500"
+			rewards: [{
+				id: "1000000000019501"
+				item: "ae2:wireless_access_point"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019502"
+				item: "ae2:crafting_terminal"
+				title: "Установить Crafting Terminal"
+				type: "item"
+			}]
+			title: "МЭ Терминал Крафта"
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000019500"]
+			description: [
+				"§7[Сеть в кармане]§r"
+				"Беспроводной терминал крафта позволяет открывать базу и крафтить предметы из любой точки мира через квантовый мост."
+			]
+			id: "1000000000019600"
+			rewards: [{
+				id: "1000000000019601"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019602"
+				item: "ae2:wireless_crafting_terminal"
+				title: "Создать Wireless Crafting Terminal"
+				type: "item"
+			}]
+			title: "Беспроводной Доступ"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1000000000019500"]
+			description: [
+				"§7[Транспортные тоннели]§r"
+				"P2P-туннели передают энергию, жидкости, свет, редстоун и подсети сквозь единый магистральный кабель."
+			]
+			id: "1000000000019700"
+			rewards: [{
+				count: 16
+				id: "1000000000019701"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019702"
+				item: "ae2:me_p2p_tunnel"
+				title: "Создать P2P Tunnel"
+				type: "item"
+			}]
+			title: "МЭ P2P Туннели"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000019400"]
+			description: [
+				"§7[Утилизация хлама]§r"
+				"Конденсатор материи сжимает миллионы единиц мусора в 256k-шары материи или Квантовые Сингулярности (Singularity)."
+			]
+			id: "1000000000019800"
+			rewards: [{
+				id: "1000000000019801"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019802"
+				item: "ae2:condenser"
+				title: "Построить Condenser"
+				type: "item"
+			}]
+			title: "Конденсатор Материи и Сингулярность"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000019500"]
+			description: [
+				"§7[Программирование крафтов]§r"
+				"Записывайте рецепты на пустые шаблоны (Blank Pattern)."
+				""
+				"§6Типы рецептов:§r"
+				"• Обычные верстачные крафты."
+				"• Обработка в сторонних печах, дробителях и алтарях."
+			]
+			id: "1000000000019900"
+			rewards: [{
+				count: 4
+				id: "1000000000019901"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019902"
+				item: "ae2:pattern_encoding_terminal"
+				title: "Создать Pattern Encoding Terminal"
+				type: "item"
+			}]
+			title: "Терминал Кодирования Шаблонов"
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1000000000019900"]
+			description: [
+				"§7[Мгновенное производство]§r"
+				"Поставьте МЭ Поставщик Шаблонов (Pattern Provider) вплотную к Молекулярному Сборщику."
+				""
+				"§6Автокрафт:§r"
+				"• Система сама заказывает, распределяет и собирает компоненты любой вложенности за доли секунды."
+			]
+			id: "1000000000019A00"
+			rewards: [{
+				id: "1000000000019A01"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019A02"
+				item: "ae2:molecular_assembler"
+				title: "Построить Molecular Assembler"
+				type: "item"
+			}]
+			title: "Молекулярный Сборщик"
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1000000000019A00"]
+			description: [
+				"§7[Вычислительный кластер]§r"
+				"МЭ Сопроцессоры ускоряют параллельные вычисления, а блоки Crafting Storage хранят цепочки операций."
+				""
+				"§6Мощь:§r"
+				"• Хранилище на 64k позволяет заказывать колоссальные партии сложных крафтов за один клик."
+			]
+			id: "1000000000019B00"
+			rewards: [{
+				count: 4
+				id: "1000000000019B01"
+				item: "ae2:crafting_accelerator"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019B02"
+				item: "ae2:64k_crafting_storage"
+				title: "Собрать 64k Crafting Storage"
+				type: "item"
+			}]
+			title: "Крафтовый Процессор 64k"
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1000000000019000"]
+			description: [
+				"§7[Нейросети против гринда]§r"
+				"Прибор глубокого обучения носится в инвентаре или слоте Curios."
+				""
+				"§6Сбор данных:§r"
+				"• Вставьте чистую модель данных внутрь Deep Learner и убивайте целевых мобов."
+				"• По мере убийств модель прокачивается: Faulty -> Basic -> Advanced -> Superior."
+			]
+			id: "1000000000019C00"
+			rewards: [{
+				count: 2
+				id: "1000000000019C01"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019C02"
+				item: "hostilenetworks:deep_learner"
+				title: "Создать Deep Learner"
+				type: "item"
+			}]
+			title: "Глубокое Обучение (Deep Learner)"
+			x: 1.5d
+			y: 1.2d
+		}
+		{
+			dependencies: ["1000000000019C00"]
+			description: [
+				"§7[Топливо симуляций]§r"
+				"Матрицы предсказаний расходуются камерой симуляции при генерации виртуальных копий мобов."
+			]
+			id: "1000000000019D00"
+			rewards: [{
+				count: 16
+				id: "1000000000019D01"
+				item: "hostilenetworks:prediction_matrix"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019D02"
+				item: "hostilenetworks:prediction_matrix"
+				title: "Создать Prediction Matrix"
+				type: "item"
+			}]
+			title: "Матрицы Предсказаний"
+			x: 3.0d
+			y: 1.2d
+		}
+		{
+			dependencies: ["1000000000019D00"]
+			description: [
+				"§7[Виртуальные сражения]§r"
+				"Поместите обученную модель моба и матрицы предсказаний в Камеру Симуляции."
+				""
+				"§6Результат:§r"
+				"• Устройство генерирует Предсказания (Predictions) моба и чистый опыт без спавна реальных сущностей и лагов!"
+			]
+			id: "1000000000019E00"
+			rewards: [{
+				count: 4
+				id: "1000000000019E01"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019E02"
+				item: "hostilenetworks:sim_chamber"
+				title: "Построить Simulation Chamber"
+				type: "item"
+			}]
+			title: "Камера Симуляции (Simulation Chamber)"
+			x: 4.5d
+			y: 1.2d
+		}
+		{
+			dependencies: ["1000000000019E00"]
+			description: [
+				"§7[Материализация дропа]§r"
+				"Фабрикатор лута перерабатывает предсказания в реальные предметы дропа выбранного типа."
+				""
+				"§6Бесконечные ресурсы:§r"
+				"• Выбирайте любой лут: звезды незера, слезы гаста, жемчуг эндера, рога и головы боссов!"
+				"• Автоматическая ферма занимает ровно 2 блока!"
+			]
+			id: "1000000000019F00"
+			rewards: [{
+				count: 2
+				id: "1000000000019F01"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000019F02"
+				item: "hostilenetworks:loot_fabricator"
+				title: "Создать Loot Fabricator"
+				type: "item"
+			}]
+			title: "Фабрикатор Лута (Loot Fabricator)"
+			x: 6.0d
+			y: 1.2d
+		}
+		{
+			dependencies: ["1000000000019F00"]
+			description: [
+				"§7[Побочная энергия]§r"
+				"В процессе симуляций накапливаются предсказания Верхнего Мира, Незера и Края."
+				""
+				"§6Обмен:§r"
+				"• Конвертируются в ценнейшие редкие минералы или огромные объемы опыта."
+			]
+			id: "100000000001A000"
+			rewards: [{
+				count: 8
+				id: "100000000001A001"
+				item: "hostilenetworks:nether_prediction"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001A002"
+				item: "hostilenetworks:overworld_prediction"
+				title: "Получить Overworld Prediction"
+				type: "item"
+			}]
+			title: "Предсказания Измерений"
+			x: 7.5d
+			y: 1.2d
+		}
+		{
+			dependencies: ["1000000000019000"]
+			description: [
+				"§7[Семена изобилия]§r"
+				"Осколки Процветания (Prosperity Shard) служат основой для выведения любых магических семян."
+				""
+				"§6Крафт:§r"
+				"• Используются для создания базовых семян процветания (Prosperity Seed Base)."
+			]
+			id: "100000000001A100"
+			rewards: [{
+				count: 16
+				id: "100000000001A101"
+				item: "mysticalagriculture:prosperity_shard"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001A102"
+				item: "mysticalagriculture:prosperity_shard"
+				title: "Добыть Prosperity Shard"
+				type: "item"
+			}]
+			title: "Осколки Процветания"
+			x: 1.5d
+			y: 3.2d
+		}
+		{
+			dependencies: ["100000000001A100"]
+			description: [
+				"§7[Первичная эссенция]§r"
+				"Инферий — исходная материя мода Mystical Agriculture."
+				""
+				"§6Сбор:§r"
+				"• Выпадает при сборе урожая культур инферия и убийстве мобов."
+			]
+			id: "100000000001A200"
+			rewards: [{
+				count: 32
+				id: "100000000001A201"
+				item: "mysticalagriculture:inferium_essence"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001A202"
+				item: "mysticalagriculture:inferium_essence"
+				title: "Собрать Inferium Essence"
+				type: "item"
+			}]
+			title: "Инфериевая Эссенция (Tier 1)"
+			x: 3.0d
+			y: 3.2d
+		}
+		{
+			dependencies: ["100000000001A200"]
+			description: [
+				"§7[Выведение семян]§r"
+				"Установите Алтарь Наполнения и окружите его 8 пьедесталами (Infusion Pedestal)."
+				""
+				"§6Процесс:§r"
+				"• В центр кладется семя-основа, по кругу — эссенции и ресурсы."
+				"• Подайте сигнал редстоуна для начала ритуала синтеза семени."
+			]
+			id: "100000000001A300"
+			rewards: [{
+				count: 8
+				id: "100000000001A301"
+				item: "mysticalagriculture:infusion_pedestal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001A302"
+				item: "mysticalagriculture:infusion_altar"
+				title: "Построить Infusion Altar"
+				type: "item"
+			}]
+			title: "Алтарь Наполнения"
+			x: 4.5d
+			y: 3.2d
+		}
+		{
+			dependencies: ["100000000001A300"]
+			description: [
+				"§7[Катализатор ступеней]§r"
+				"Кристалл наполнения превращает 4 эссенции младшего тира в 1 эссенцию следующего уровня."
+				""
+				"§6Мастер-кристалл:§r"
+				"• Создайте Master Infusion Crystal с бесконечной прочностью для полной автоматизации крафтов в AE2!"
+			]
+			id: "100000000001A400"
+			rewards: [{
+				id: "100000000001A401"
+				item: "mysticalagriculture:master_infusion_crystal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001A402"
+				item: {
+					Count: 1
+					id: "mysticalagriculture:infusion_crystal"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Infusion Crystal"
+				type: "item"
+			}]
+			title: "Кристалл Наполнения"
+			x: 6.0d
+			y: 3.2d
+		}
+		{
+			dependencies: ["100000000001A400"]
+			description: [
+				"§7[Вторая ступень]§r"
+				"Зеленая эссенция для семян железа, угля, меди и красителей."
+			]
+			id: "100000000001A500"
+			rewards: [{
+				count: 16
+				id: "100000000001A501"
+				item: "mysticalagriculture:prudentium_essence"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001A502"
+				item: "mysticalagriculture:prudentium_essence"
+				title: "Получить Prudentium"
+				type: "item"
+			}]
+			title: "Прудентий (Tier 2)"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["100000000001A500"]
+			description: [
+				"§7[Третья ступень]§r"
+				"Оранжевая эссенция для семян золота, лазурита, кварца и редстоуна."
+			]
+			id: "100000000001A600"
+			rewards: [{
+				count: 16
+				id: "100000000001A601"
+				item: "mysticalagriculture:tertium_essence"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001A602"
+				item: "mysticalagriculture:tertium_essence"
+				title: "Получить Tertium"
+				type: "item"
+			}]
+			title: "Тертий (Tier 3)"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["100000000001A600"]
+			description: [
+				"§7[Четвертая ступень]§r"
+				"Синяя эссенция для семян алмазов, изумрудов и никеля."
+			]
+			id: "100000000001A700"
+			rewards: [{
+				count: 16
+				id: "100000000001A701"
+				item: "mysticalagriculture:imperium_essence"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001A702"
+				item: "mysticalagriculture:imperium_essence"
+				title: "Получить Imperium"
+				type: "item"
+			}]
+			title: "Империй (Tier 4)"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["100000000001A700"]
+			description: [
+				"§7[Пятая ступень]§r"
+				"Алая эссенция для семян незерита, звезд незера и драконьих чешуек."
+			]
+			id: "100000000001A800"
+			rewards: [{
+				count: 8
+				id: "100000000001A801"
+				item: "mysticalagriculture:supremium_essence"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001A802"
+				item: "mysticalagriculture:supremium_essence"
+				title: "Получить Supremium"
+				type: "item"
+			}]
+			title: "Супремий (Tier 5)"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["100000000001A800"]
+			description: [
+				"§7[Сверхплодородная земля]§r"
+				"Пашня из Супремия колоссально ускоряет созревание культур и обязательна для роста высших семян."
+			]
+			id: "100000000001A900"
+			rewards: [{
+				id: "100000000001A901"
+				item: "mysticalagriculture:supremium_watering_can"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001A902"
+				item: "mysticalagriculture:supremium_farmland"
+				title: "Вспахать Supremium Farmland"
+				type: "item"
+			}]
+			title: "Почва Супремия"
+			x: 7.5d
+			y: 5.8d
+		}
+		{
+			dependencies: ["100000000001A800"]
+			description: [
+				"§7[Сельскохозяйственное божество]§r"
+				"Комплект брони Супремия дарует бесконечный креативный полет и иммунитет к большинству типов урона."
+			]
+			id: "100000000001AA00"
+			rewards: [{
+				count: 2
+				id: "100000000001AA01"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001AA02"
+				item: {
+					Count: 1
+					id: "mysticalagriculture:supremium_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Сковать Нагрудник Супремия"
+				type: "item"
+			}]
+			title: "Доспехи Супремия"
+			x: 6.0d
+			y: 5.8d
+		}
+		{
+			dependencies: ["100000000001A800"]
+			description: [
+				"§7[Высшая эссенция]§r"
+				"Светящаяся фиолетовая эссенция, пробужденная силой Вардена и Дракона Края."
+				""
+				"§6Венец агрономии:§r"
+				"• Необходима для Философского камня и божественных семян высшего порядка."
+			]
+			id: "100000000001AB00"
+			rewards: [{
+				count: 4
+				id: "100000000001AB01"
+				item: "mysticalagriculture:awakened_supremium_essence"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001AB02"
+				item: "mysticalagriculture:awakened_supremium_essence"
+				title: "Создать Awakened Supremium"
+				type: "item"
+			}]
+			title: "Пробужденный Супремий (Tier 6)"
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["100000000001A700"]
+			description: [
+				"§7[Прощай, копание шахт]§r"
+				"Создайте семена Железа, Алмазов и Незерита на Алтаре Наполнения."
+				""
+				"§6Автоматизация:§r"
+				"• Высаживайте семена на землю нужного тира (Supremium Farmland)."
+				"• МЭ плоскости сбора или авто-сборщики автоматически отправляют готовые руды прямо в терминал AE2!"
+			]
+			id: "100000000001AC00"
+			rewards: [{
+				id: "100000000001AC01"
+				item: "mysticalagriculture:netherite_seeds"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001AC02"
+				item: "mysticalagriculture:diamond_seeds"
+				title: "Вывести семена Алмазов"
+				type: "item"
+			}]
+			title: "Семена Ресурсов на Грядках"
+			x: 7.5d
+			y: 3.2d
+		}
+		{
+			dependencies: [
+				"1000000000019B00"
+				"1000000000019F00"
+				"100000000001AB00"
+			]
+			description: [
+				"§7[Финал 10 Эпохи]§r"
+				"Вы построили совершенную МЭ сеть без ограничений каналов, наладили беслаговое нейросетевое клонирование лута в Hostile Neural Networks и пробудили эссенцию Супремия."
+				""
+				"§6Прорыв к закону Эквивалентного Обмена:§r"
+				"• В ваших руках собраны все три столпа бесконечного снабжения: цифровое хранилище, симуляция боссов и аграрная алхимия."
+				"• Впереди вас ждет космический полет мода Ad Astra и открытие Философского Камня (ProjectE) — закона эквивалентного обмена материи (EMC)!"
+				""
+				"§aОткрывает доступ к Эпохе 11: Эквивалентный Обмен (ProjectE & Ad Astra)!§r"
+			]
+			id: "100000000001B800"
+			rewards: [{
+				count: 4
+				id: "100000000001B801"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "100000000001B802"
+				item: "mysticalagriculture:awakened_supremium_essence"
+				title: "Пробужденный Супремий"
+				type: "item"
+			}]
+			title: "ГЕЙТКИПЕР: Архитектор Бесконечности"
+			x: 11.0d
+			y: 1.0d
+		}
+	]
+	title: "Эпоха 10: Цифровой Разум (Applied Energistics 2 & Hostile Neural Networks)"
+}

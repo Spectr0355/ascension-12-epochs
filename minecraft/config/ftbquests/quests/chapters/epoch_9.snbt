@@ -1,0 +1,829 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "epoch_9"
+	group: "16900AE08ADDC982"
+	icon: "cataclysm:monstrous_horn"
+	id: "2000000000000008"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000015800"]
+			description: [
+				"§c[ВНИМАНИЕ: Сложнейшие боссы Майнкрафта]§r"
+				"Вы вступили в эпоху титанических сражений. Боссы мода §bL_Ender's Cataclysm§r обладают несколькими фазами, пробивают любые щиты, вызывают метеоритные дожди и лавовые гейзеры."
+				""
+				"§6Подготовка к битвам:§r"
+				"• Прокачайте боевые навыки в древе скиллов Pufferfish's Skills."
+				"• Перекуйте оружие и доспехи в Apotheosis для максимальных аффиксов и слотов под самоцветы."
+				"• Запаситесь зельями регенерации и используйте перекаты [R] для избежания сокрушающих атак."
+			]
+			id: "1000000000017000"
+			rewards: [{
+				count: 2
+				id: "1000000000017001"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017002"
+				item: "minecraft:obsidian"
+				title: "Приготовиться к битве"
+				type: "item"
+			}]
+			title: "Падение Титанов: Предупреждение"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000017000"]
+			description: [
+				"§7[Ужас Древнего Города]§r"
+				"Варден — слепой владыка глубинного скалка, реагирующий на звуки и вибрации."
+				""
+				"§eТактика боя:§r"
+				"• Используйте дальний бой и шерстяные блоки для глушения шагов."
+				"• Остерегайтесь звукового удара (Sonic Boom), проходящего сквозь любые препятствия."
+				""
+				"§6Награда:§r"
+				"• Сердце Глубин (Heart of the Deep) — артефакт активации портала Древнего Города."
+			]
+			id: "1000000000017100"
+			rewards: [{
+				id: "1000000000017101"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000017102"
+				item: "deeperdarker:heart_of_the_deep"
+				title: "Добыть Сердце Глубин"
+				type: "item"
+			}]
+			title: "Хранитель Глубин: Варден"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1000000000017100"]
+			description: [
+				"§7[Потустороннее измерение]§r"
+				"Найдите рамку портала в центре Древнего Города (Ancient City)."
+				""
+				"§6Активация:§r"
+				"• Нажмите ПКМ Сердцем Глубин (Heart of the Deep) по внутренней части гигантской рамки из усиленного глубинного сланца."
+				"• Завеса тьмы рассеется, открывая портал в измерение The Otherside!"
+			]
+			id: "1000000000017200"
+			rewards: [{
+				count: 8
+				id: "1000000000017201"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017202"
+				item: "deeperdarker:sculk_transmitter"
+				title: "Создать Sculk Transmitter"
+				type: "item"
+			}]
+			title: "Врата в The Otherside"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1000000000017200"]
+			description: [
+				"§7[Леса Потусторонья]§r"
+				"Деревья Эхо растут в сумрачных долинах The Otherside, вибрируя от звуковых импульсов."
+			]
+			id: "1000000000017300"
+			rewards: [{
+				count: 16
+				id: "1000000000017301"
+				item: "deeperdarker:echo_log"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017302"
+				item: "deeperdarker:echo_log"
+				title: "Срубить Echo Log"
+				type: "item"
+			}]
+			title: "Древесина Эхо (Echo Wood)"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1000000000017200"]
+			description: [
+				"§7[Древние окаменелости]§r"
+				"Янтарь хранит первородную силу света внутри темных пещер Потусторонья."
+			]
+			id: "1000000000017400"
+			rewards: [{
+				count: 8
+				id: "1000000000017401"
+				item: "deeperdarker:soul_dust"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017402"
+				item: "deeperdarker:crystallized_amber"
+				title: "Добыть Янтарь"
+				type: "item"
+			}]
+			title: "Кристаллизованный Янтарь"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1000000000017200"]
+			description: [
+				"§7[Минералы Потусторонья]§r"
+				"Резонарий (Resonarium) пульсирует звуковыми волнами внутри скальных массивов The Otherside."
+				""
+				"§6Снаряжение:§r"
+				"• Оружие из резонария испускает звуковые ударные волны при атаке."
+				"• Броня поглощает урон от взрывов и вибраций."
+			]
+			id: "1000000000017500"
+			rewards: [{
+				id: "1000000000017501"
+				item: {
+					Count: 1
+					id: "deeperdarker:resonarium_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017502"
+				item: "deeperdarker:resonarium"
+				title: "Добыть Resonarium"
+				type: "item"
+			}]
+			title: "Кристаллы Резонария"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1000000000017500"]
+			description: [
+				"§7[Высшая защита]§r"
+				"Панцирь Вардена (Warden Carapace) служит сырьем для ковки сверхпрочных доспехов."
+				""
+				"§6Свойства:§r"
+				"• Превосходит незерит по защите и стойкости к отбрасыванию."
+				"• Дарует владельцу способность ощущать вибрации врагов сквозь стены."
+			]
+			id: "1000000000017600"
+			rewards: [{
+				id: "1000000000017601"
+				item: {
+					Count: 1
+					id: "deeperdarker:warden_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017602"
+				item: "deeperdarker:warden_carapace"
+				title: "Собрать Warden Carapace"
+				type: "item"
+			}]
+			title: "Доспехи из Панциря Вардена"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1000000000017600"]
+			description: [
+				"§7[Левитация душ]§r"
+				"Кристаллы душ позволяют создавать Элитры Душ (Soul Elytra), не требующие пороха для разгона."
+			]
+			id: "1000000000017700"
+			rewards: [{
+				id: "1000000000017701"
+				item: {
+					Count: 1
+					id: "deeperdarker:soul_elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017702"
+				item: "deeperdarker:soul_crystal"
+				title: "Добыть Soul Crystal"
+				type: "item"
+			}]
+			title: "Кристаллы Душ и Элитры"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1000000000017000"]
+			description: [
+				"§7[Поисковый артефакт]§r"
+				"Око указывает путь к циклопической Адской Кузнице (Soul Blacksmith) в глубинах Нижнего Мира."
+			]
+			id: "1000000000017800"
+			rewards: [{
+				count: 2
+				id: "1000000000017801"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017802"
+				item: "cataclysm:monstrous_eye"
+				title: "Создать Monstrous Eye"
+				type: "item"
+			}]
+			title: "Око Монструозности"
+			x: 2.0d
+			y: -0.8d
+		}
+		{
+			dependencies: ["1000000000017800"]
+			description: [
+				"§7[Битва с боссом]§r"
+				"В центре Адской Кузницы дремлет колосс из расплавленного незерита."
+				""
+				"§eКРИТИЧЕСКАЯ ТАКТИКА БОЯ:§r"
+				"• Колосс бьет гигантским молотом, создавая волны лавы и разрушая блоки вокруг."
+				"• Блокировать его удары щитом бессмысленно — щит мгновенно отключится!"
+				"• Используйте перекаты [R] для уклонения от замахов молота."
+				""
+				"§6Главный трофей:§r"
+				"• Рог Монструозности (Monstrous Horn) — фундаментальный компонент для МЭ Контроллера!"
+			]
+			id: "1000000000017900"
+			rewards: [{
+				id: "1000000000017901"
+				item: {
+					Count: 1
+					id: "cataclysm:monstrous_helm"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000017902"
+				item: "cataclysm:monstrous_horn"
+				title: "Добыть Рог Монструозности"
+				type: "item"
+			}]
+			title: "Монструозность Незерита (Netherite Monstrosity)"
+			x: 3.5d
+			y: -0.8d
+		}
+		{
+			dependencies: ["1000000000017900"]
+			description: [
+				"§7[Сокрушительный молот]§r"
+				"Оружие поверженного колосса, создающее землетрясения при ударах в землю."
+				""
+				"§6Спецатака:§r"
+				"• Зажатие ПКМ сотрясает землю вокруг, подбрасывая всех врагов в воздух."
+			]
+			id: "1000000000017A00"
+			rewards: [{
+				id: "1000000000017A01"
+				item: "minecraft:netherite_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017A02"
+				item: "cataclysm:infernal_forge"
+				title: "Выковать Infernal Forge"
+				type: "item"
+			}]
+			title: "Адская Кузня (Infernal Forge)"
+			x: 5.0d
+			y: -0.8d
+		}
+		{
+			dependencies: ["1000000000017000"]
+			description: [
+				"§7[Поисковый артефакт]§r"
+				"Око Пламени находит Пылающую Арену (Burning Arena) в лавовых морях Незера."
+			]
+			id: "1000000000017B00"
+			rewards: [{
+				count: 16
+				id: "1000000000017B01"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017B02"
+				item: "cataclysm:flame_eye"
+				title: "Создать Flame Eye"
+				type: "item"
+			}]
+			title: "Око Пламени"
+			x: 2.0d
+			y: 0.8d
+		}
+		{
+			dependencies: ["1000000000017B00"]
+			description: [
+				"§7[Битва с боссом]§r"
+				"Игнис — владыка огненного меча, обладающий непревзойденной фехтовальной техникой."
+				""
+				"§eТактика боя:§r"
+				"• В первой фазе босс атакует рывками и круговыми ударами клинка."
+				"• Во второй фазе Игнис взмывает в воздух, призывая метеоритный дождь и столбы пламени."
+				"• Не стойте на горящих символах арены!"
+			]
+			id: "1000000000017C00"
+			rewards: [{
+				id: "1000000000017C01"
+				item: "cataclysm:altar_of_fire"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000017C02"
+				item: "cataclysm:ignitium_ingot"
+				title: "Добыть слиток Игнитиума"
+				type: "item"
+			}]
+			title: "Игнис: Падший Мечник (Ignis)"
+			x: 3.5d
+			y: 0.8d
+		}
+		{
+			dependencies: ["1000000000017C00"]
+			description: [
+				"§7[Клинок Игниса]§r"
+				"Гигантский пылающий двуручный меч, испепеляющий все на своем пути."
+				""
+				"§6Огненная волна:§r"
+				"• Заряженный удар выпускает разрезающую волну чистого адского огня."
+			]
+			id: "1000000000017D00"
+			rewards: [{
+				id: "1000000000017D01"
+				item: "cataclysm:ignitium_chestplate"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017D02"
+				item: "cataclysm:the_incinerator"
+				title: "Получить The Incinerator"
+				type: "item"
+			}]
+			title: "Инсинератор: Пылающий Двуручник"
+			x: 5.0d
+			y: 0.8d
+		}
+		{
+			dependencies: ["1000000000017C00"]
+			description: [
+				"§7[Гладиаторы глубин]§r"
+				"В темных залах арены сражаются Коболедиаторы, вооруженные оружием из черной стали."
+			]
+			id: "1000000000017E00"
+			rewards: [{
+				id: "1000000000017E01"
+				item: {
+					Count: 1
+					id: "cataclysm:black_steel_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017E02"
+				item: "cataclysm:black_steel_ingot"
+				title: "Добыть Черную сталь"
+				type: "item"
+			}]
+			title: "Черная Сталь и Коболедиатор"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000017900"]
+			description: [
+				"§7[Поисковый артефакт]§r"
+				"Указывает путь к Древней Фабрике (Ancient Factory) глубоко под землей в Обычном мире."
+			]
+			id: "1000000000017F00"
+			rewards: [{
+				count: 8
+				id: "1000000000017F01"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000017F02"
+				item: "cataclysm:mech_eye"
+				title: "Создать Mech Eye"
+				type: "item"
+			}]
+			title: "Механическое Око"
+			x: 7.5d
+			y: -1.2d
+		}
+		{
+			dependencies: ["1000000000017F00"]
+			description: [
+				"§7[Битва с боссом]§r"
+				"Предвестник — механический титан, сплав визер-магии и древних технологий."
+				""
+				"§eТактика боя:§r"
+				"• Босс поливает арену лазерными лучами, стреляет самонаводящимися ракетами и призывает дронов."
+				"• Прячьтесь за колоннами фабрики от сплошного лазерного огня."
+				""
+				"§6Награда:§r"
+				"• Слитки Визерита (Witherite Ingot) для крафта высокотехнологичного оружия."
+			]
+			id: "1000000000018000"
+			rewards: [{
+				count: 2
+				id: "1000000000018001"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000018002"
+				item: "cataclysm:witherite_ingot"
+				title: "Добыть Witherite Ingot"
+				type: "item"
+			}]
+			title: "Предвестник (The Harbinger)"
+			x: 9.0d
+			y: -1.2d
+		}
+		{
+			dependencies: ["1000000000018000"]
+			description: [
+				"§7[Тяжелое вооружение]§r"
+				"Многоствольный скорострельный лазерный пулемет, работающий на энергии визерита."
+			]
+			id: "1000000000018100"
+			rewards: [{
+				count: 8
+				id: "1000000000018101"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000018102"
+				item: {
+					Count: 1
+					id: "cataclysm:laser_gatling"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Собрать Laser Gatling"
+				type: "item"
+			}]
+			title: "Лазерный Гатлинг"
+			x: 10.5d
+			y: -1.8d
+		}
+		{
+			dependencies: ["1000000000018000"]
+			description: [
+				"§7[Контактное оружие]§r"
+				"Вращающаяся дисковая пила, непрерывно наносящая колоссальный урон при зажатии ПКМ."
+			]
+			id: "1000000000018200"
+			rewards: [{
+				count: 2
+				id: "1000000000018201"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000018202"
+				item: "cataclysm:meat_shredder"
+				title: "Создать Meat Shredder"
+				type: "item"
+			}]
+			title: "Мясорубка Предвестника"
+			x: 10.5d
+			y: -0.6d
+		}
+		{
+			dependencies: ["1000000000017E00"]
+			description: [
+				"§7[Тайны песков]§r"
+				"Находит древние гробницы и усыпальницу Древнего Реликта (Ancient Remnant)."
+			]
+			id: "1000000000018300"
+			rewards: [{
+				count: 4
+				id: "1000000000018301"
+				item: "cataclysm:ancient_metal_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000018302"
+				item: "cataclysm:desert_eye"
+				title: "Создать Desert Eye"
+				type: "item"
+			}]
+			title: "Око Пустыни и Древний Реликт"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000018300"]
+			description: [
+				"§7[Амулет песков]§r"
+				"Оберег древних фараонов, защищающий владельца от иссушения и песчаных бурь."
+			]
+			id: "1000000000018400"
+			rewards: [{
+				count: 4
+				id: "1000000000018401"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000018402"
+				item: "cataclysm:necklace_of_the_desert"
+				title: "Найти Necklace of the Desert"
+				type: "item"
+			}]
+			title: "Ожерелье Пустыни"
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000018400"]
+			description: [
+				"§7[Оружие скверны]§r"
+				"Слитки Курсиума (Cursium) и Проклятый лук вытягивают жизненные силы из пораженных противников."
+			]
+			id: "1000000000018500"
+			rewards: [{
+				count: 4
+				id: "1000000000018501"
+				item: "cataclysm:cursium_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000018502"
+				item: "cataclysm:cursed_bow"
+				title: "Создать Cursed Bow"
+				type: "item"
+			}]
+			title: "Проклятый Лук и Курсиум"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000017D00"]
+			description: [
+				"§7[Поисковый артефакт]§r"
+				"Находит Разрушенную Цитадель (Ruined Citadel) на далеких островах Края."
+			]
+			id: "1000000000018600"
+			rewards: [{
+				count: 16
+				id: "1000000000018601"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000018602"
+				item: "cataclysm:void_eye"
+				title: "Создать Void Eye"
+				type: "item"
+			}]
+			title: "Око Пустоты"
+			x: 6.5d
+			y: 0.8d
+		}
+		{
+			dependencies: ["1000000000018600"]
+			description: [
+				"§7[Битва с боссом]§r"
+				"Страж Края парит в тронном зале цитадели, манипулируя гравитацией и пространством."
+				""
+				"§eТактика боя:§r"
+				"• Босс телепортирует игрока в воздух, призывает рунические печати и обрушивает гравитационные кулаки."
+				"• Держитесь ближе к центру арены, чтобы не вылететь в пустоту Края!"
+			]
+			id: "1000000000018700"
+			rewards: [{
+				id: "1000000000018701"
+				item: "cataclysm:altar_of_void"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000018702"
+				item: "cataclysm:void_core"
+				title: "Добыть Ядро Пустоты"
+				type: "item"
+			}]
+			title: "Страж Края (Ender Guardian)"
+			x: 8.0d
+			y: 0.8d
+		}
+		{
+			dependencies: ["1000000000018700"]
+			description: [
+				"§7[Гравитационная рукавица]§r"
+				"Позволяет создавать защитный силовой щит и запускать телекинетические снаряды."
+			]
+			id: "1000000000018800"
+			rewards: [{
+				count: 2
+				id: "1000000000018801"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000018802"
+				item: "cataclysm:gauntlet_of_guard"
+				title: "Получить Gauntlet of Guard"
+				type: "item"
+			}]
+			title: "Рукавица Стража"
+			x: 9.5d
+			y: 0.4d
+		}
+		{
+			dependencies: ["1000000000018700"]
+			description: [
+				"§7[Оружие Пустоты]§r"
+				"Тяжелый молот Пустоты, искажающий пространство при каждом ударе."
+			]
+			id: "1000000000018900"
+			rewards: [{
+				id: "1000000000018901"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000018902"
+				item: "cataclysm:void_forge"
+				title: "Выковать Void Forge"
+				type: "item"
+			}]
+			title: "Кузня Пустоты (Void Forge)"
+			x: 9.5d
+			y: 1.4d
+		}
+		{
+			dependencies: [
+				"1000000000018000"
+				"1000000000018700"
+			]
+			description: [
+				"§7[Поисковый артефакт]§r"
+				"Око указывает путь к Затонувшему Городу (Sunken City) на самом дне океана."
+			]
+			id: "1000000000018A00"
+			rewards: [{
+				count: 32
+				id: "1000000000018A01"
+				item: "minecraft:prismarine_crystals"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000018A02"
+				item: "cataclysm:abyss_eye"
+				title: "Создать Abyss Eye"
+				type: "item"
+			}]
+			title: "Око Бездны"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000018A00"]
+			description: [
+				"§7[Древний морской колосс]§r"
+				"Глубоководный титан, охраняющий тайны Алтаря Бездны."
+				""
+				"§eТактика боя:§r"
+				"• Босс создает гигантские водовороты, призывает акул Бездны и стреляет кислотными залпами."
+				"• Необходимы доспехи с подводным дыханием и высокой скоростью плавания."
+			]
+			id: "1000000000018B00"
+			rewards: [{
+				id: "1000000000018B01"
+				item: "cataclysm:altar_of_abyss"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000018B02"
+				item: "cataclysm:tidal_claws"
+				title: "Добыть Приливные Когти"
+				type: "item"
+			}]
+			title: "Левиафан (The Leviathan)"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000018B00"]
+			description: [
+				"§7[Триумф над Титанами]§r"
+				"Монструозность Незерита, Игнис, Предвестник, Страж Края и Левиафан повержены. Варден Потустороннего мира склонил голову."
+				""
+				"§6Врата в Цифровую Эру:§r"
+				"• В ваших руках собраны редчайшие материалы вселенной: Рог Монструозности, Игнитиум, Визерит и Ядро Пустоты."
+				"• Наградой становится фундамент для построения вашей первой цифровой МЭ Сети — МЭ Контроллер (ME Controller)!"
+				"• В этой сборке §aканалы AE2 ПОЛНОСТЬЮ ОТКЛЮЧЕНЫ§r, а авто-фермы Hostile Neural Networks готовы клонировать поверженных боссов!"
+				""
+				"§aОткрывает доступ к Эпохе 10: Цифровой Разум (Applied Energistics 2 & Hostile Neural Networks)!§r"
+			]
+			id: "372CA6EEBE2025FF"
+			rewards: [{
+				id: "4DB24EE1F5FD4239"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2077BE7FF9D241B4"
+				item: "cataclysm:monstrous_horn"
+				title: "Предъявить Рог Монструозности"
+				type: "item"
+			}]
+			title: "ГЕЙТКИПЕР: Владыка Апокалипсиса"
+			x: 15.5d
+			y: 0.0d
+		}
+	]
+	title: "Эпоха 9: Титаны и Бездны (Cataclysm & Deeper and Darker)"
+}

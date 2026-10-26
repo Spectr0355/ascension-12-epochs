@@ -1,0 +1,745 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "epoch_11"
+	group: "3F14D79910B03C58"
+	icon: "projecte:philosophers_stone"
+	id: "200000000000000A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["100000000001B800"]
+			description: [
+				"§7[Выход на орбиту]§r"
+				"Для стабилизации Философского Камня вам понадобятся редчайшие металлы других планет Солнечной системы."
+				""
+				"§6Подготовка к полету:§r"
+				"• Сшейте полный комплект Скафандра (Space Suit)."
+				"• Постройте Загрузчик Кислорода (Oxygen Loader) и заполните кислородные баллоны скафандра."
+			]
+			id: "100000000001C000"
+			rewards: [{
+				id: "100000000001C001"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001C002"
+				item: {
+					Count: 1
+					id: "ad_astra:space_suit"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Сшить Space Suit"
+				type: "item"
+			}]
+			title: "Космический Скафандр и Кислород"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000001C000"]
+			description: [
+				"§7[Горючее для двигателей]§r"
+				"Перерабатывайте сырую нефть в Очистителе Топлива (Fuel Refinery) для получения высокооктанового ракетного горючего."
+			]
+			id: "100000000001C100"
+			rewards: [{
+				count: 8
+				id: "100000000001C101"
+				item: "ad_astra:steel_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001C102"
+				item: "ad_astra:fuel_refinery"
+				title: "Построить Fuel Refinery"
+				type: "item"
+			}]
+			title: "Очистка Нефти и Ракетное Топливо"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["100000000001C100"]
+			description: [
+				"§7[Космодром]§r"
+				"Верстак NASA служит для сборки корпусов ракет различных уровней."
+				""
+				"§6Стартовая позиция:§r"
+				"• Постройте площадку 3х3 из блоков Launch Pad для установки ракеты."
+			]
+			id: "100000000001C200"
+			rewards: [{
+				count: 9
+				id: "100000000001C201"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001C202"
+				item: "ad_astra:nasa_workbench"
+				title: "Создать NASA Workbench"
+				type: "item"
+			}]
+			title: "Верстак NASA и Стартовая Площадка"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["100000000001C200"]
+			description: [
+				"§7[Первый космический полет]§r"
+				"Соберите Ракету 1 уровня, заправьте ее топливом и отправляйтесь на Луну."
+				""
+				"§6Лунная добыча:§r"
+				"• Найдите жилы лунного металла Деш (Desh)."
+			]
+			id: "100000000001C300"
+			rewards: [{
+				count: 4
+				id: "100000000001C301"
+				item: "ad_astra:desh_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "100000000001C302"
+				item: "ad_astra:tier_1_rocket"
+				title: "Собрать Tier 1 Rocket"
+				type: "item"
+			}]
+			title: "Ракета 1 Уровня: Полет на Луну"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["100000000001C300"]
+			description: [
+				"§7[Материалы спутника]§r"
+				"Слитки Деша необходимы для постройки двигателей и обшивки ракеты 2 уровня для экспедиции на Марс."
+			]
+			id: "100000000001C400"
+			rewards: [{
+				count: 8
+				id: "100000000001C401"
+				item: "ad_astra:desh_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001C402"
+				item: "ad_astra:desh_ingot"
+				title: "Добыть Desh Ingot"
+				type: "item"
+			}]
+			title: "Лунный Металл Деш (Desh)"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["100000000001C400"]
+			description: [
+				"§7[Красная планета]§r"
+				"Ракета 2 уровня преодолевает расстояние до Марса."
+				""
+				"§6Марсианские ископаемые:§r"
+				"• В недрах Марса залегает сияющий металл Острум (Ostrum)."
+			]
+			id: "100000000001C500"
+			rewards: [{
+				count: 4
+				id: "100000000001C501"
+				item: "ad_astra:ostrum_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "100000000001C502"
+				item: "ad_astra:tier_2_rocket"
+				title: "Собрать Tier 2 Rocket"
+				type: "item"
+			}]
+			title: "Ракета 2 Уровня: Полет на Марс"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["100000000001C500"]
+			description: [
+				"§7[Тяжелый космосплав]§r"
+				"Острум используется для термостойких скафандров и ракеты 3 уровня."
+			]
+			id: "100000000001C600"
+			rewards: [{
+				count: 8
+				id: "100000000001C601"
+				item: "ad_astra:ostrum_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001C602"
+				item: "ad_astra:ostrum_ingot"
+				title: "Добыть Ostrum Ingot"
+				type: "item"
+			}]
+			title: "Марсианский Острум (Ostrum)"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["100000000001C600"]
+			description: [
+				"§7[Адская жара]§r"
+				"Полет на раскаленные планеты: Венеру и Меркурий."
+				""
+				"§6ВНИМАНИЕ:§r"
+				"• Температура на Венере смертоносна! Обязательно скрафтите Незеритовый скафандр."
+			]
+			id: "100000000001C700"
+			rewards: [{
+				id: "100000000001C701"
+				item: {
+					Count: 1
+					id: "ad_astra:netherite_space_suit"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "100000000001C702"
+				item: "ad_astra:tier_3_rocket"
+				title: "Собрать Tier 3 Rocket"
+				type: "item"
+			}]
+			title: "Ракета 3 Уровня: Венера и Меркурий"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["100000000001C700"]
+			description: [
+				"§7[Огненное сердце звезд]§r"
+				"Калорит — редчайший солнечный минерал, добываемый на Меркурии и Венере."
+				""
+				"§6Венец стабильности:§r"
+				"• Служит финальным космическим стабилизатором для создания Философского Камня!"
+			]
+			id: "100000000001C800"
+			rewards: [{
+				count: 4
+				id: "100000000001C801"
+				item: "ad_astra:calorite_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001C802"
+				item: "ad_astra:calorite_ingot"
+				title: "Добыть Calorite Ingot"
+				type: "item"
+			}]
+			title: "Слиток Калорита (Calorite)"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"100000000001C000"
+				"100000000001C800"
+			]
+			description: [
+				"§7[Венец алхимии всех 11 эпох]§r"
+				"Философский камень подчиняет структуру мироздания вашей воле."
+				""
+				"§6Трансмутация на лету:§r"
+				"• Нажатие ПКМ трансмутирует блоки в окружающем мире (уголь в железо, камень в гравий и т.д.)."
+				"• Нажатие клавиши [C] открывает мобильный верстак 3х3 прямо в руках."
+			]
+			id: "100000000001C900"
+			rewards: [{
+				id: "100000000001C901"
+				item: "projecte:transmutation_table"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "100000000001C902"
+				item: "projecte:philosophers_stone"
+				title: "Создать Философский Камень"
+				type: "item"
+			}]
+			title: "Философский Камень (Philosopher's Stone)"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["100000000001C900"]
+			description: [
+				"§7[Закон эквивалентного обмена (EMC)]§r"
+				"Стол Трансмутации позволяет изучать предметы и материализовать их за счет накопленной энергии EMC."
+				""
+				"§6Обучение стола:§r"
+				"• Сожгите предмет в центральной чаше стола, чтобы навсегда изучить его матрицу."
+				"• В дальнейшем вы сможете вынимать неограниченное количество этого предмета, конвертируя любой мусор в EMC."
+			]
+			id: "100000000001CA00"
+			rewards: [{
+				count: 4
+				id: "100000000001CA01"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001CA02"
+				item: "projecte:transmutation_table"
+				title: "Установить Transmutation Table"
+				type: "item"
+			}]
+			title: "Стол Трансмутации"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["100000000001CA00"]
+			description: [
+				"§7[Переносной Стол]§r"
+				"Портативная версия стола трансмутации, сохраняющая все изученные предметы и баланс EMC игрока в любой точке мультивселенной."
+			]
+			id: "100000000001CB00"
+			rewards: [{
+				count: 2
+				id: "100000000001CB01"
+				item: "projecte:dark_matter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001CB02"
+				item: "projecte:transmutation_tablet"
+				title: "Создать Transmutation Tablet"
+				type: "item"
+			}]
+			title: "Планшет Трансмутации"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["100000000001C900"]
+			description: [
+				"§7[Алхимический клей]§r"
+				"Пыль ковалентности (Low, Medium, High) используется для создания Алхимических сундуков и колец."
+			]
+			id: "100000000001CC00"
+			rewards: [{
+				id: "100000000001CC01"
+				item: "projecte:alchemical_chest"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001CC02"
+				item: "projecte:high_covalence_dust"
+				title: "Создать High Covalence Dust"
+				type: "item"
+			}]
+			title: "Пыль Ковалентности"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["100000000001CC00"]
+			description: [
+				"§7[Безразмерное хранилище]§r"
+				"Алхимический сундук вмещает 104 слота предметов. А Алхимическая сумка того же цвета связывается с ним дистанционно."
+			]
+			id: "100000000001CD00"
+			rewards: [{
+				count: 8
+				id: "100000000001CD01"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001CD02"
+				item: "projecte:alchemical_chest"
+				title: "Создать Alchemical Chest"
+				type: "item"
+			}]
+			title: "Алхимический Сундук и Сумка"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["100000000001C900"]
+			description: [
+				"§7[Концентрат жара]§r"
+				"Алхимический уголь содержит вчетверо больше энергии, чем обычный уголь."
+			]
+			id: "100000000001CE00"
+			rewards: [{
+				count: 16
+				id: "100000000001CE01"
+				item: "projecte:alchemical_coal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001CE02"
+				item: "projecte:alchemical_coal"
+				title: "Получить Alchemical Coal"
+				type: "item"
+			}]
+			title: "Алхимический Уголь"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["100000000001CE00"]
+			description: [
+				"§7[Вторая ступень синтеза]§r"
+				"Топливо Мебиуса сгорает невероятно долго и служит основой для Темной Материи."
+			]
+			id: "100000000001CF00"
+			rewards: [{
+				count: 8
+				id: "100000000001CF01"
+				item: "projecte:mobius_fuel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001CF02"
+				item: "projecte:mobius_fuel"
+				title: "Создать Mobius Fuel"
+				type: "item"
+			}]
+			title: "Топливо Мебиуса"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["100000000001CF00"]
+			description: [
+				"§7[Вечное пламя]§r"
+				"Высшая форма алхимического топлива, несущая колоссальный запас энергии EMC."
+			]
+			id: "100000000001D000"
+			rewards: [{
+				count: 4
+				id: "100000000001D001"
+				item: "projecte:aeternalis_fuel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001D002"
+				item: "projecte:aeternalis_fuel"
+				title: "Создать Aeternalis Fuel"
+				type: "item"
+			}]
+			title: "Топливо Этерналис"
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["100000000001D000"]
+			description: [
+				"§7[Батарея EMC]§r"
+				"Звезды Кляйна хранят чистую энергию EMC для подпитки мощнейших артефактов и брони."
+			]
+			id: "100000000001D100"
+			rewards: [{
+				count: 4
+				id: "100000000001D101"
+				item: "projecte:aeternalis_fuel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001D102"
+				item: "projecte:klein_star_ein"
+				title: "Создать Klein Star Ein"
+				type: "item"
+			}]
+			title: "Звезда Кляйна: Ein"
+			x: 6.0d
+			y: 3.2d
+		}
+		{
+			dependencies: ["100000000001D100"]
+			description: [
+				"§7[Абсолютный накопитель]§r"
+				"Шестая и высшая ступень звезды Кляйна, вмещающая до 51 200 000 очков EMC!"
+			]
+			id: "100000000001D200"
+			rewards: [{
+				count: 2
+				id: "100000000001D201"
+				item: "projecte:red_matter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001D202"
+				item: "projecte:klein_star_omega"
+				title: "Создать Klein Star Omega"
+				type: "item"
+			}]
+			title: "Звезда Кляйна: Omega"
+			x: 7.5d
+			y: 3.2d
+		}
+		{
+			dependencies: [
+				"100000000001CB00"
+				"100000000001D000"
+			]
+			description: [
+				"§7[Сжатие гравитации]§r"
+				"Темная материя образуется сплавлением алмазных блоков с топливом Этерналис."
+				""
+				"§6Прочность:§r"
+				"• Инструменты и броня из темной материи абсолютно не ломаются и имеют нулевой износ!"
+			]
+			id: "100000000001D300"
+			rewards: [{
+				id: "100000000001D301"
+				item: "projecte:dark_matter_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001D302"
+				item: "projecte:dark_matter"
+				title: "Создать Dark Matter"
+				type: "item"
+			}]
+			title: "Темная Материя (Dark Matter)"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["100000000001D300"]
+			description: [
+				"§7[Сингулярность материи]§r"
+				"Красная материя — пик развития алхимических материалов мода ProjectE."
+				""
+				"§6Сверхсила:§r"
+				"• Превосходит темную материю по всем характеристикам."
+				"• Обязательный реагент для перехода в Эпоху 12: Avaritia!"
+			]
+			id: "100000000001D400"
+			rewards: [{
+				id: "100000000001D401"
+				item: "projecte:red_matter_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001D402"
+				item: "projecte:red_matter"
+				title: "Создать Red Matter"
+				type: "item"
+			}]
+			title: "Красная Материя (Red Matter)"
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["100000000001D300"]
+			description: [
+				"§7[Фабрика клонирования]§r"
+				"Поместите целевой предмет в верхний слот Конденсатора."
+				""
+				"§6Клонирование:§r"
+				"• Конденсатор моментально поглощает любые подаваемые ресурсы и непрерывно штампует копии целевого предмета."
+			]
+			id: "100000000001D500"
+			rewards: [{
+				count: 4
+				id: "100000000001D501"
+				item: "projecte:dark_matter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001D502"
+				item: "projecte:condenser_mk2"
+				title: "Построить Condenser MK2"
+				type: "item"
+			}]
+			title: "Конденсатор Энергии (Condenser MK2)"
+			x: 6.0d
+			y: -0.8d
+		}
+		{
+			dependencies: ["100000000001D400"]
+			description: [
+				"§7[Генерация EMC из света]§r"
+				"Коллекторы 3 уровня генерируют очки EMC прямо из окружающего света и передают их в подключенные реле и конденсаторы."
+			]
+			id: "100000000001D600"
+			rewards: [{
+				id: "100000000001D601"
+				item: "projecte:relay_mk3"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001D602"
+				item: "projecte:collector_mk3"
+				title: "Создать Collector MK3"
+				type: "item"
+			}]
+			title: "Сборщик Энергии (Collector MK3)"
+			x: 7.5d
+			y: -0.8d
+		}
+		{
+			dependencies: ["100000000001D400"]
+			description: [
+				"§7[Стирание пластов]§r"
+				"Кирка из красной материи обладает несколькими режимами радиуса копания (клавиша [V] и [G])."
+			]
+			id: "100000000001D700"
+			rewards: [{
+				count: 2
+				id: "100000000001D701"
+				item: "projecte:red_matter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001D702"
+				item: "projecte:rm_pick"
+				title: "Сковать RM Pickaxe"
+				type: "item"
+			}]
+			title: "Кирка Красной Материи"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["100000000001D700"]
+			description: [
+				"§7[Оружие погибели]§r"
+				"Катар объединяет в себе меч, топор, ножницы и мотыгу. Правый клик уничтожает всех врагов в радиусе вокруг."
+			]
+			id: "100000000001D800"
+			rewards: [{
+				id: "100000000001D801"
+				item: "projecte:red_matter_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001D802"
+				item: "projecte:rm_katar"
+				title: "Создать RM Katar"
+				type: "item"
+			}]
+			title: "Катар Красной Материи"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["100000000001D700"]
+			description: [
+				"§7[Уничтожитель миров]§r"
+				"Объединяет кирку, лопату и молот. Правый клик по породе сносит огромные кубы пространства в одно мгновение."
+			]
+			id: "100000000001D900"
+			rewards: [{
+				id: "100000000001D901"
+				item: "projecte:red_matter_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "100000000001D902"
+				item: "projecte:rm_morning_star"
+				title: "Создать RM Morning Star"
+				type: "item"
+			}]
+			title: "Утренняя Звезда (Morning Star)"
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"100000000001D400"
+				"100000000001D800"
+				"100000000001D900"
+			]
+			description: [
+				"§7[Финал 11 Эпохи]§r"
+				"Вы покорили космос мода Ad Astra, синтезировали легендарный Философский Камень и подчинили закон эквивалентного обмена материи (EMC)."
+				""
+				"§6Врата в Эпоху Богов:§r"
+				"• В ваших руках собраны блоки Красной Материи и нерушимые орудия трансмутации."
+				"• Остался последний шаг: за гранью космоса лежит Бесконечность — мод Avaritia!"
+				"• Создайте Нейтрониевый Сборщик, сожмите миллионы ресурсов в Сингулярности и скуйте Слиток Бесконечности!"
+				""
+				"§aОткрывает доступ к финальной Эпохе 12: Становление Богом (Avaritia)!§r"
+			]
+			id: "100000000001E800"
+			rewards: [{
+				count: 4
+				id: "100000000001E801"
+				item: "minecraft:netherite_block"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "100000000001E802"
+				item: "projecte:red_matter_block"
+				title: "Предъявить Блок Красной Материи"
+				type: "item"
+			}]
+			title: "ГЕЙТКИПЕР: Повелитель Материи"
+			x: 12.5d
+			y: 0.5d
+		}
+	]
+	title: "Эпоха 11: Эквивалентный Обмен (ProjectE & Ad Astra)"
+}

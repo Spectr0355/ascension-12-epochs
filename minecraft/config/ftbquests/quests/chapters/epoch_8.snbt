@@ -1,0 +1,1083 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "epoch_8"
+	group: "16900AE08ADDC982"
+	icon: "undergarden:catalyst"
+	id: "2000000000000007"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1000000000013800"]
+			description: [
+				"§7[Спуск под коренную породу]§r"
+				"Подземный сад (The Undergarden) — сумрачный подземный мир, раскинувшийся под слоем бедрок."
+				""
+				"§6Постройка портала:§r"
+				"• Постройте вертикальную рамку 4х5 из каменных кирпичей (Stone Bricks)."
+				"• Нажмите ПКМ Катализатором (Undergarden Catalyst) по нижней внутренней грани рамки."
+				""
+				"§aСовет:§r"
+				"• В этом мире царит вечная тьма, а большинство обычных источников света светят гораздо слабее."
+			]
+			id: "3EC275E56D48E247"
+			rewards: [{
+				count: 32
+				id: "2625897E0823FE57"
+				item: "minecraft:stone_bricks"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "4E46C116C26DE90E"
+				item: "undergarden:catalyst"
+				title: "Активировать портал Катализатором"
+				type: "item"
+			}]
+			title: "Портал в The Undergarden"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000014000"]
+			description: [
+				"§7[Скальные породы глубин]§r"
+				"Глубинный камень (Depthrock) и Морозный камень (Shiverstone) слагают бесконечные пещеры Undergarden."
+				""
+				"§6Особенности:§r"
+				"• Прочнее обычного камня, служит основой для прочных кирпичей и печей Подземья."
+				"• В толще скал залегают жилы Клоггрума и Морозной стали."
+			]
+			id: "7FF6E0BCAA6B4265"
+			rewards: [{
+				count: 16
+				id: "3E088D198BD23C2C"
+				item: "undergarden:shiverstone"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "311332E954C35A92"
+				item: "undergarden:depthrock"
+				title: "Добыть Depthrock"
+				type: "item"
+			}]
+			title: "Глубинный Камень (Depthrock)"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1000000000014100"]
+			description: [
+				"§7[Флора тьмы]§r"
+				"Дичбулбы (Ditchbulbs) растут на каменистых почвах Undergarden и служат ключевым источником природного освещения."
+				""
+				"§6Применение:§r"
+				"• Перетираются в пасту для создания факелов Подземья."
+				"• Используются в алхимических отварах и кулинарии."
+			]
+			id: "7EE5CACDF4B87784"
+			rewards: [{
+				count: 8
+				id: "2F4BDE77326C1CA9"
+				item: "undergarden:ditchbulb"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "48F16D71BEEB3B32"
+				item: "undergarden:ditchbulb"
+				title: "Собрать Ditchbulb"
+				type: "item"
+			}]
+			title: "Дичбулбы: Свет Подземья"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1000000000014200"]
+			description: [
+				"§7[Свисающие плоды]§r"
+				"Светящиеся лозы Друпвайн свисают со сводов пещер."
+				""
+				"§6Сбор и свойства:§r"
+				"• Плоды можно срывать и употреблять в пищу."
+				"• Освещают пространство вокруг и позволяют безопасно спускаться и подниматься по вертикальным утесам."
+			]
+			id: "61BD61EBD913EBAA"
+			rewards: [{
+				count: 8
+				id: "6CDF75FA11D4A691"
+				item: "undergarden:droopvine_item"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "078AF2C031E4255B"
+				item: "undergarden:droopvine_item"
+				title: "Собрать плоды Droopvine"
+				type: "item"
+			}]
+			title: "Лозы Друпвайн"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1000000000014100"]
+			description: [
+				"§7[Опасная флора]§r"
+				"Кусты блистерберри растут на пустошах пепла. Их плоды содержат нестабильную взрывчатую смесь."
+				""
+				"§6Опасность:§r"
+				"• Наступание на куст вызывает детонацию."
+				"• Собранные ягоды используются как боеприпасы для рогатки и начинка для гранат."
+			]
+			id: "068E6C94F6AB1C17"
+			rewards: [{
+				count: 16
+				id: "7B88E8C4A6E69C32"
+				item: "undergarden:blisterberry"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "6554D44432E1B22F"
+				item: "undergarden:blisterberry"
+				title: "Собрать Blisterberry"
+				type: "item"
+			}]
+			title: "Взрывные Ягоды"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1000000000014400"]
+			description: [
+				"§7[Дистанционное оружие]§r"
+				"Компактная боевая рогатка позволяет вести прицельный огонь специфическими боеприпасами Подземья."
+				""
+				"§6Снаряды:§r"
+				"• В качестве боеприпасов используются взрывные ягоды (Blisterberry) и куски слизи."
+				"• Ягоды детонируют при попадании во врага, нанося урон по площади."
+			]
+			id: "78F2D5CABC15BB87"
+			rewards: [{
+				count: 16
+				id: "3CF49B6C4EEA753C"
+				item: "undergarden:blisterberry"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "0138501AFA517E18"
+				item: {
+					Count: 1
+					id: "undergarden:slingshot"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Рогатку"
+				type: "item"
+			}]
+			title: "Рогатка Подземья"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1000000000014500"]
+			description: [
+				"§7[Тяжелая взрывчатка]§r"
+				"Улучшенные метательные гранаты из концентрированной мякоти блистерберри."
+				""
+				"§6Применение:§r"
+				"• Мощный взрыв разрушает слабые породы и наносит тяжелый урон толпам монстров."
+			]
+			id: "56EF04747D1E87B5"
+			rewards: [{
+				count: 4
+				id: "3D2AAF406953E4E3"
+				item: "undergarden:blisterbomb"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "75573CEDF9B6A38F"
+				item: "undergarden:blisterbomb"
+				title: "Создать Blisterbomb"
+				type: "item"
+			}]
+			title: "Блистербомбы"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1000000000014000"]
+			description: [
+				"§7[Обитатели глубин]§r"
+				"Глумперы — неуклюжие массивные амфибии, прыгающие по болотам и пещерам Undergarden."
+				""
+				"§6Добыча:§r"
+				"• Ноги глумпера (Gloomper Leg) служат превосходным сытным пропитанием после прожарки."
+				"• Из них также варят зелья высоких прыжков."
+			]
+			id: "1057F0E090DAF13A"
+			rewards: [{
+				count: 8
+				id: "18988748092DA84C"
+				item: "minecraft:golden_carrot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "05B06E073E8DC164"
+				item: "undergarden:gloomper_leg"
+				title: "Добыть ногу Глумпера"
+				type: "item"
+			}]
+			title: "Фауна Глубин: Глумперы"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1000000000014000"]
+			description: [
+				"§7[Тяжелый металл]§r"
+				"Клоггрум — базовый медный на вид, но невероятно плотный металл Подземья."
+				""
+				"§6Особенности:§r"
+				"• Превосходит железо по прочности и эффективности."
+				"• Необходим для крафта тяжелых топоров, щитов и прутьев."
+			]
+			id: "77A8285F90C092E1"
+			rewards: [{
+				count: 8
+				id: "62680EDA8F59B712"
+				item: "undergarden:cloggrum_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "76F7A87C2B9CCFB2"
+				item: "undergarden:cloggrum_ingot"
+				title: "Выплавить слиток Cloggrum"
+				type: "item"
+			}]
+			title: "Металл Клоггрум"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000014800"]
+			description: [
+				"§7[Экипировка рудокопа]§r"
+				"Инструменты из клоггрума обладают огромным запасом прочности."
+				""
+				"§6Кирка Клоггрума:§r"
+				"• Способна добывать самые твердые породы Undergarden, включая жилы Морозной Стали и Утерия."
+			]
+			id: "26BB91E2C8305D45"
+			rewards: [{
+				id: "0559AD3DAAB74D52"
+				item: {
+					Count: 1
+					id: "undergarden:cloggrum_battleaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "13CEF7989A0E20B0"
+				item: {
+					Count: 1
+					id: "undergarden:cloggrum_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Сковать кирку Cloggrum"
+				type: "item"
+			}]
+			title: "Орудия Клоггрума"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000014900"]
+			description: [
+				"§7[Холодная ковка]§r"
+				"Руда морозной стали залегает в ледяных и заснеженных биомах глубин."
+				""
+				"§6Свойства экипировки:§r"
+				"• Оружие из морозной стали замедляет и замораживает пораженных врагов."
+				"• Доспехи защищают носителя от эффектов обморожения."
+			]
+			id: "027A11F427822167"
+			rewards: [{
+				id: "739F74588E98C1B1"
+				item: {
+					Count: 1
+					id: "undergarden:froststeel_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "79955571E9EE2423"
+				item: "undergarden:froststeel_ingot"
+				title: "Добыть Froststeel Ingot"
+				type: "item"
+			}]
+			title: "Морозная Сталь (Froststeel)"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000014A00"]
+			description: [
+				"§7[Энергетический минерал]§r"
+				"Светящиеся красные кристаллы Утерия пульсируют концентрированной силой жизни."
+				""
+				"§6Убийца гнили:§r"
+				"• Оружие из Утерия наносит колоссальный тройной урон по гниющим тварям Undergarden (Rotspawn)."
+				"• Защищает владельца от заражения чумой глубин."
+			]
+			id: "5BD6C5741817F33A"
+			rewards: [{
+				id: "5493F182F41EBFD9"
+				item: {
+					Count: 1
+					id: "undergarden:utherium_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "184B0B89A0B7F5A1"
+				item: "undergarden:utherium_crystal"
+				title: "Добыть кристаллы Утерия"
+				type: "item"
+			}]
+			title: "Кристаллы Утерия (Utherium)"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000014B00"]
+			description: [
+				"§7[Сердце скверны]§r"
+				"Осколки выпадают при победе над могучими мутировавшими чудовищами — Ротбистами (Rotbeast)."
+				""
+				"§6Применение:§r"
+				"• Используются для крафта редких магических амулетов и ремонта брони Утерия."
+			]
+			id: "1000000000014C00"
+			rewards: [{
+				count: 2
+				id: "1000000000014C01"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000014C02"
+				item: "undergarden:utheric_shard"
+				title: "Собрать Utheric Shard"
+				type: "item"
+			}]
+			title: "Утерические Осколки"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1000000000014B00"]
+			description: [
+				"§7[Наследие падшей цивилизации]§r"
+				"В сундуках катакомб можно отыскать реликвии древних защитников Undergarden."
+				""
+				"§6Свойства:§r"
+				"• Высокая базовая защита и встроенные чары защиты от снарядов."
+			]
+			id: "1000000000014D00"
+			rewards: [{
+				count: 8
+				id: "1000000000014D01"
+				item: "minecraft:experience_bottle"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000014D02"
+				item: {
+					Count: 1
+					id: "undergarden:ancient_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Отыскать Древний шлем"
+				type: "item"
+			}]
+			title: "Древние Доспехи Катакомб"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1000000000014B00"]
+			description: [
+				"§7[Битва с боссом]§r"
+				"В центре подземных катакомб дремлет древний титан — Забытый Страж (Forgotten Guardian)."
+				""
+				"§eТактика боя:§r"
+				"• Страж обладает огромной броней и сокрушает землю двуручным топором."
+				"• Уворачивайтесь от ударных волн и атакуйте в паузах между замахами."
+				""
+				"§6Награда:§r"
+				"• Слитки Забытого Металла (Forgotten Metal) пробивают абсолютно любую броню!"
+			]
+			id: "1000000000014E00"
+			rewards: [{
+				id: "1000000000014E01"
+				item: {
+					Count: 1
+					id: "undergarden:forgotten_battleaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000014E02"
+				item: "undergarden:forgotten_ingot"
+				title: "Добыть Forgotten Ingot"
+				type: "item"
+			}]
+			title: "Катакомбы: Забытый Страж"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000014E00"]
+			description: [
+				"§7[Бронебойный клинок]§r"
+				"Оружие из забытого металла полностью игнорирует броню и естественное сопротивление цели урону."
+				""
+				"§6Мощь:§r"
+				"• Наносит чистый гарантированный урон боссам любых измерений."
+			]
+			id: "1000000000014F00"
+			rewards: [{
+				id: "1000000000014F01"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000014F02"
+				item: {
+					Count: 1
+					id: "undergarden:forgotten_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Сковать Forgotten Sword"
+				type: "item"
+			}]
+			title: "Меч Забытого Металла"
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1000000000014000"]
+			description: [
+				"§7[Проводник между мирами]§r"
+				"В верхнем мире найдите заброшенную хижину Смотрителя порталов (Gatekeeper)."
+				""
+				"§6Журнал приключений:§r"
+				"• Поговорите со Смотрителем или обыщите его сундуки, чтобы получить Голубой Журнал (Blue Journal)."
+				"• Журнал содержит исчерпывающие энциклопедические сведения обо всех существах и рудах обоих измерений."
+			]
+			id: "1000000000015000"
+			rewards: [{
+				count: 8
+				id: "1000000000015001"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015002"
+				item: "blue_skies:blue_journal"
+				title: "Получить Blue Journal"
+				type: "item"
+			}]
+			title: "Хижина Смотрителя (Gatekeeper)"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000015000"]
+			description: [
+				"§7[Ключ небесных порталов]§r"
+				"Обычное огниво бессильно активировать порталы мода Blue Skies."
+				""
+				"§6Получение:§r"
+				"• Выменяйте зажигалку у Смотрителя за изумруды или найдите в потайном сундуке его дома."
+				"• Зажигалка зажигает порталы в Эвербрайт и Эвердаун."
+			]
+			id: "1000000000015100"
+			rewards: [{
+				count: 8
+				id: "1000000000015101"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015102"
+				item: {
+					Count: 1
+					id: "blue_skies:zeal_lighter"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить Zeal Lighter"
+				type: "item"
+			}]
+			title: "Зажигалка Зила (Zeal Lighter)"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1000000000015100"]
+			description: [
+				"§7[Мир вечного сияния]§r"
+				"Холодное лазурное измерение постоянного яркого дня."
+				""
+				"§6Активация портала:§r"
+				"• Рамка 4х5 строится из Бирюзовых каменных кирпичей (Turquoise Stonebrick)."
+				"• Зажгите портал Зажигалкой Зила."
+			]
+			id: "1000000000015200"
+			rewards: [{
+				count: 16
+				id: "1000000000015201"
+				item: "blue_skies:turquoise_stonebrick"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015202"
+				item: "blue_skies:turquoise_stonebrick"
+				title: "Рамка портала Everbright"
+				type: "item"
+			}]
+			title: "Врата в Эвербрайт (Everbright)"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1000000000015100"]
+			description: [
+				"§7[Мир вечного рассвета]§r"
+				"Теплое осеннее измерение нескончаемого заката и древней магии."
+				""
+				"§6Активация портала:§r"
+				"• Рамка 4х5 строится из Лунных каменных кирпичей (Lunar Stonebrick)."
+				"• Активируйте зажигалкой Зила."
+			]
+			id: "1000000000015300"
+			rewards: [{
+				count: 16
+				id: "1000000000015301"
+				item: "blue_skies:lunar_stonebrick"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015302"
+				item: "blue_skies:lunar_stonebrick"
+				title: "Рамка портала Everdawn"
+				type: "item"
+			}]
+			title: "Врата в Эвердаун (Everdawn)"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1000000000015200"]
+			description: [
+				"§7[Дары Эвербрайта]§r"
+				"Светящиеся плоды лунного фрукта растут на деревьях морозного мира."
+				""
+				"§6Эффект:§r"
+				"• Быстро восстанавливают сытость и накладывают эффект ночного зрения."
+			]
+			id: "1000000000015400"
+			rewards: [{
+				count: 8
+				id: "1000000000015401"
+				item: "blue_skies:crescent_fruit"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015402"
+				item: "blue_skies:crescent_fruit"
+				title: "Собрать Crescent Fruit"
+				type: "item"
+			}]
+			title: "Лунный Фрукт Эвербрайта"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1000000000015300"]
+			description: [
+				"§7[Дары Эвердауна]§r"
+				"Чешуйчатые плоды растут в засушливых лесах Эвердауна."
+				""
+				"§6Эффект:§r"
+				"• Даруют временное сопротивление урону от огня."
+			]
+			id: "1000000000015500"
+			rewards: [{
+				count: 8
+				id: "1000000000015501"
+				item: "blue_skies:scalefruit"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015502"
+				item: "blue_skies:scalefruit"
+				title: "Собрать Scalefruit"
+				type: "item"
+			}]
+			title: "Чешуйчатый Фрукт Эвердауна"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1000000000015400"]
+			description: [
+				"§7[Минералы Эвербрайта]§r"
+				"Аквит — прочный небесно-голубой самоцвет, служащий аналогом алмаза в Эвербрайте."
+				""
+				"§6Снаряжение:§r"
+				"• Оружие и броня из аквита обладают высокой прочностью и эффективностью внутри измерений Blue Skies."
+			]
+			id: "1000000000015600"
+			rewards: [{
+				count: 4
+				id: "1000000000015601"
+				item: "blue_skies:aquite"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015602"
+				item: "blue_skies:aquite"
+				title: "Добыть самоцвет Aquite"
+				type: "item"
+			}]
+			title: "Самоцвет Аквит (Aquite)"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1000000000015600"]
+			description: [
+				"§7[Редкие руды]§r"
+				"Чароит залегает в глубинах Эвербрайта и дает мощные защитные чары для брони."
+			]
+			id: "1000000000015700"
+			rewards: [{
+				count: 4
+				id: "1000000000015701"
+				item: "blue_skies:charoite"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015702"
+				item: "blue_skies:charoite"
+				title: "Добыть кристаллы Charoite"
+				type: "item"
+			}]
+			title: "Фиолетовый Чароит"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1000000000015600"]
+			description: [
+				"§7[Технические металлы]§r"
+				"Вентиум (Ventium) и Фалсит (Falsite) используются для ковки механизмов, ведер и тяжелых болтов."
+			]
+			id: "1000000000015800"
+			rewards: [{
+				count: 4
+				id: "1000000000015801"
+				item: "blue_skies:falsite_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015802"
+				item: "blue_skies:ventium_ingot"
+				title: "Выплавить Ventium Ingot"
+				type: "item"
+			}]
+			title: "Вентиум и Фалсит"
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1000000000015600"]
+			description: [
+				"§7[Метательное оружие]§r"
+				"Копье позволяет наносить колющие удары в ближнем бою или метко метаться во врагов с высокой скоростью."
+			]
+			id: "1000000000015900"
+			rewards: [{
+				count: 2
+				id: "1000000000015901"
+				item: "blue_skies:aquite"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015902"
+				item: {
+					Count: 1
+					id: "blue_skies:bluebright_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Сковать Bluebright Spear"
+				type: "item"
+			}]
+			title: "Копье Сияния"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1000000000015700"]
+			description: [
+				"§7[Битва с боссом]§r"
+				"Башня Ослепительного Данжа уходит в небеса. На вершине вас ждет Призыватель (The Summoner)."
+				""
+				"§eТактика боя:§r"
+				"• Призыватель парит в воздухе и непрерывно вызывает молнии и летающие книги-миньоны."
+				"• Отбивайте книги обратно в босса или сбивайте его стрелами, чтобы сбросить защитный щит."
+				""
+				"§6Награда:§r"
+				"• Трофей Призывателя и Эфирный Арк (Ethereal Arc)."
+			]
+			id: "1000000000015A00"
+			rewards: [{
+				id: "1000000000015A01"
+				item: "blue_skies:ethereal_arc"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000015A02"
+				item: "blue_skies:summoner_trophy"
+				title: "Победить Призывателя"
+				type: "item"
+			}]
+			title: "Ослепительный Данж: Призыватель"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1000000000015A00"]
+			description: [
+				"§7[Древний титан древесников]§r"
+				"В гигантском лабиринте Природы покоится Звездный Сокрушитель (Starlit Crusher) — колоссальный древесный голем."
+				""
+				"§eКРИТИЧЕСКАЯ МЕХАНИКА:§r"
+				"• Голем уязвим к ударам ТОПОРОВ! Рубите его корни и ноги."
+				"• Используйте копья для поражения светящихся уязвимых узлов на его коре."
+				""
+				"§6Награда:§r"
+				"• Трофей Сокрушителя и Арк Природы (Nature Arc)."
+			]
+			id: "1000000000015B00"
+			rewards: [{
+				id: "1000000000015B01"
+				item: "blue_skies:nature_arc"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000015B02"
+				item: "blue_skies:starlit_crusher_trophy"
+				title: "Победить Starlit Crusher"
+				type: "item"
+			}]
+			title: "Храм Природы: Звездный Сокрушитель"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1000000000015500"]
+			description: [
+				"§7[Самоцветы Эвердауна]§r"
+				"Пироп — огненно-красный кристалл, дарующий инструментам свойства пламени."
+				""
+				"§6Свойства:§r"
+				"• Инструменты из пиропа автоматически переплавляют добытые руды."
+			]
+			id: "1000000000015C00"
+			rewards: [{
+				count: 4
+				id: "1000000000015C01"
+				item: "blue_skies:pyrope_gem"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015C02"
+				item: "blue_skies:pyrope_gem"
+				title: "Добыть самоцвет Pyrope"
+				type: "item"
+			}]
+			title: "Огненный Пироп (Pyrope)"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1000000000015C00"]
+			description: [
+				"§7[Огненная сталь]§r"
+				"Горизонтит — вулканический металл Эвердауна."
+				""
+				"§6Плавильня:§r"
+				"• Используется для создания Плавильни Горизонтита (Horizonite Forge), генерирующей колоссальный жар."
+			]
+			id: "1000000000015D00"
+			rewards: [{
+				id: "1000000000015D01"
+				item: "blue_skies:horizonite_forge"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000015D02"
+				item: "blue_skies:horizonite_ingot"
+				title: "Выплавить Horizonite Ingot"
+				type: "item"
+			}]
+			title: "Металл Горизонтит"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1000000000015D00"]
+			description: [
+				"§7[Битва с боссом]§r"
+				"В башне Ослепительного Данжа Эвердауна проводит опыты безумный Алхимик (The Alchemist)."
+				""
+				"§eТактика боя:§r"
+				"• Алхимик швыряет опасные колбы с ядом, кислотой и взрывчатыми зельями."
+				"• Остерегайтесь луж скверны на полу и сбивайте его в моменты перезарядки зелий."
+				""
+				"§6Награда:§r"
+				"• Трофей Алхимика и Сумеречный Арк (Dusk Arc)."
+			]
+			id: "1000000000015E00"
+			rewards: [{
+				id: "1000000000015E01"
+				item: "blue_skies:dusk_arc"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000015E02"
+				item: "blue_skies:alchemist_trophy"
+				title: "Победить Алхимика"
+				type: "item"
+			}]
+			title: "Ослепительный Данж: Алхимик"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1000000000015E00"]
+			description: [
+				"§7[Королева ядовитых песков]§r"
+				"Глубоко под землей в ядовитом подземелье обитает Арахнарх (The Arachnarch) — чудовищный паук-титан."
+				""
+				"§eКРИТИЧЕСКАЯ ТАКТИКА:§r"
+				"• Арахнарх плюется ядом, опутывает паутиной и закапывается в песок для внезапных атак."
+				"• Перекатывайтесь в стороны в момент его выпада и контратакуйте бронебойным оружием."
+				""
+				"§6Награда:§r"
+				"• Трофей Арахнарха и Ядовитый Арк (Poison Arc)."
+			]
+			id: "1000000000015F00"
+			rewards: [{
+				id: "1000000000015F01"
+				item: "blue_skies:poison_arc"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1000000000015F02"
+				item: "blue_skies:arachnarch_trophy"
+				title: "Победить Арахнарха"
+				type: "item"
+			}]
+			title: "Ядовитое Логово: Арахнарх"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1000000000015E00"]
+			description: [
+				"§7[Высшая алхимия]§r"
+				"Алхимический стол позволяет улучшать зелья и наделять свитки тайными формулами."
+			]
+			id: "1000000000016000"
+			rewards: [{
+				count: 8
+				id: "1000000000016001"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000016002"
+				item: "blue_skies:alchemy_table"
+				title: "Создать Alchemy Table"
+				type: "item"
+			}]
+			title: "Алхимический Стол"
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1000000000015B00"
+				"1000000000015F00"
+			]
+			description: [
+				"§7[Оружие четырех измерений]§r"
+				"Клинок, вобравший в себя силу побежденных владык Эвербрайта и Эвердауна."
+				""
+				"§6Способности:§r"
+				"• Активирует пассивные эффекты установленных Арков в бою."
+			]
+			id: "1000000000016100"
+			rewards: [{
+				id: "1000000000016101"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "1000000000016102"
+				item: {
+					Count: 1
+					id: "blue_skies:infused_arc_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Infused Arc Sword"
+				type: "item"
+			}]
+			title: "Меч Арканов (Infused Arc Sword)"
+			x: 13.5d
+			y: 2.2d
+		}
+		{
+			dependencies: [
+				"1000000000014E00"
+				"1000000000015B00"
+				"1000000000015F00"
+			]
+			description: [
+				"§7[Финал 8 Эпохи]§r"
+				"Забытый Страж глубин пал, а великие титаны Эвербрайта и Эвердауна склонили головы."
+				""
+				"§6Прорыв в бездну Титанов:§r"
+				"• Вы доказали свою готовность встретиться с истинными чудовищами мультивселенной."
+				"• Впереди вас ждут древние хранители катакомб мода L_Ender's Cataclysm и леденящая бездна The Otherside (Deeper and Darker)!"
+				""
+				"§aОткрывает доступ к Эпохе 9: Титаны и Бездны (Cataclysm & Deeper and Darker)!§r"
+			]
+			id: "6888619C985AC419"
+			rewards: [{
+				count: 2
+				id: "51D4262CB5FF23CA"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "44343827E6D8464E"
+				item: "blue_skies:starlit_crusher_trophy"
+				title: "Трофей Звездного Сокрушителя"
+				type: "item"
+			}]
+			title: "ГЕЙТКИПЕР: Покоритель Недр и Небосводов"
+			x: 15.0d
+			y: 1.0d
+		}
+	]
+	title: "Эпоха 8: Мрачные Недра (The Undergarden & Blue Skies)"
+}
