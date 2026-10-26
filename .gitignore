@@ -9,6 +9,7 @@ minecraft/local/
 minecraft/patchouli_data.json
 minecraft/rhino.local.properties
 minecraft/server-resource-packs/
+minecraft/modernfix/
 
 # Temporary / scratch / build caches
 *.tmp

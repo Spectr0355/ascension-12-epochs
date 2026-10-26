@@ -1,1 +1,13 @@
-{"main_menu":{"bottom_right":[{"text":"Fabulously Optimized 5.4.1","clickEvent":{"action":"open_url","value":"https://fabulously-optimized.github.io/"}}]}}
+{
+  "main_menu": {
+    "bottom_right": [
+      {
+        "text": "Ascension: 12 Epochs v1.0.0",
+        "clickEvent": {
+          "action": "open_url",
+          "value": "https://github.com/Spectr0355/ascension-12-epochs"
+        }
+      }
+    ]
+  }
+}
